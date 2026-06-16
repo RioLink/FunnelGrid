@@ -63,9 +63,10 @@ ul { list-style: none; }
   width: 100%;
   margin: 0 auto;
   padding: 0 32px;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  gap: 0;
+  gap: 24px;
 }
 
 .logo {
@@ -78,6 +79,7 @@ ul { list-style: none; }
   white-space: nowrap;
   flex-shrink: 0;
   color: var(--white);
+  justify-self: end;
 }
 
 .logo__mark {
@@ -98,7 +100,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 36px;
   padding-left: 40px;
-  flex: 1;
+  min-width: 0;
 }
 
 .nav a {
@@ -134,6 +136,7 @@ ul { list-style: none; }
   transition: background 0.2s;
   flex-shrink: 0;
   display: block;
+  justify-self: center;
 }
 
 .btn-audit:hover { background: var(--accent2); }
@@ -1805,6 +1808,7 @@ footer { background: var(--bg); border-top: 1px solid var(--border); }
 }
 
 @media (max-width: 900px) {
+  .header__inner { display: flex; justify-content: space-between; }
   .nav, .btn-audit { display: none; }
   .burger { display: flex; }
   .top-strip { display: none; }

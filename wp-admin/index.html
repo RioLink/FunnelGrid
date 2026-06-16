@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard ‹ FunnelGrid — WordPress</title>
+  <link rel="stylesheet" href="/wp-admin/wp-admin.css">
+</head>
+<body>
+  <div class="wp-admin">
+    <aside class="wp-sidebar">
+      <a class="wp-sidebar__brand" href="/wp-admin/">
+        <span class="wp-logo">W</span>
+        <span>WordPress</span>
+      </a>
+      <nav class="wp-menu" aria-label="Admin menu">
+        <a class="wp-menu__item is-active" href="#"><span class="wp-menu__icon">▦</span><span>Dashboard</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">✎</span><span>Posts</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">▣</span><span>Media</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">▤</span><span>Pages</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">☰</span><span>Comments</span></a>
+        <div class="wp-menu__divider"></div>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">◒</span><span>Appearance</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">▧</span><span>Plugins</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">◉</span><span>Users</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">⚙</span><span>Tools</span></a>
+        <a class="wp-menu__item" href="#"><span class="wp-menu__icon">☷</span><span>Settings</span></a>
+      </nav>
+    </aside>
+
+    <div class="wp-shell">
+      <header class="wp-adminbar">
+        <div class="wp-adminbar__left">
+          <a class="wp-adminbar__wp" href="/wp-admin/">W</a>
+          <a href="/">FunnelGrid</a>
+          <a href="#">+ New</a>
+          <a href="#">Comments</a>
+        </div>
+        <div class="wp-adminbar__right">
+          <a href="#">Howdy, admin</a>
+        </div>
+      </header>
+
+      <main class="wp-content">
+        <div class="wp-page-title">
+          <h1>Dashboard</h1>
+          <button type="button">Screen Options</button>
+          <button type="button">Help</button>
+        </div>
+
+        <section class="wp-welcome">
+          <button class="wp-welcome__close" type="button">Dismiss</button>
+          <h2>Welcome to WordPress!</h2>
+          <p>We've assembled some links to get you started.</p>
+          <div class="wp-welcome__grid">
+            <div>
+              <h3>Get Started</h3>
+              <a class="wp-button wp-button-primary" href="#">Customize Your Site</a>
+              <a class="wp-link" href="#">or, change your theme completely</a>
+            </div>
+            <div>
+              <h3>Next Steps</h3>
+              <a href="#">Write your first blog post</a>
+              <a href="#">Add an About page</a>
+              <a href="#">View your site</a>
+            </div>
+            <div>
+              <h3>More Actions</h3>
+              <a href="#">Manage widgets or menus</a>
+              <a href="#">Turn comments on or off</a>
+              <a href="#">Learn more about getting started</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="wp-dashboard">
+          <section class="wp-card">
+            <header class="wp-card__head">
+              <h2>At a Glance</h2>
+              <button type="button">▲</button>
+            </header>
+            <div class="wp-card__body">
+              <ul class="wp-stats">
+                <li><a href="#">7 Posts</a></li>
+                <li><a href="#">12 Pages</a></li>
+                <li><a href="#">3 Comments</a></li>
+                <li><a href="#">WordPress 6.5 running FunnelGrid theme.</a></li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="wp-card">
+            <header class="wp-card__head">
+              <h2>Activity</h2>
+              <button type="button">▲</button>
+            </header>
+            <div class="wp-card__body">
+              <h3>Recently Published</h3>
+              <p><span>Today, 10:24</span> <a href="#">SEO-аудит сайту</a></p>
+              <p><span>Yesterday, 16:12</span> <a href="#">Контент-маркетинг для B2B</a></p>
+              <h3>Recent Comments</h3>
+              <p>From <strong>admin</strong> on <a href="#">FunnelGrid</a></p>
+            </div>
+          </section>
+
+          <section class="wp-card">
+            <header class="wp-card__head">
+              <h2>Quick Draft</h2>
+              <button type="button">▲</button>
+            </header>
+            <div class="wp-card__body">
+              <label for="draft-title">Title</label>
+              <input id="draft-title" type="text">
+              <label for="draft-content">Content</label>
+              <textarea id="draft-content" rows="5"></textarea>
+              <button class="wp-button wp-button-primary" type="button">Save Draft</button>
+            </div>
+          </section>
+
+          <section class="wp-card">
+            <header class="wp-card__head">
+              <h2>Site Health Status</h2>
+              <button type="button">▲</button>
+            </header>
+            <div class="wp-card__body wp-health">
+              <div class="wp-health__ring"></div>
+              <div>
+                <h3>Good</h3>
+                <p>Your site is looking good, but there are still some things you can do to improve its performance and security.</p>
+                <a href="#">Take a look at the Site Health screen.</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="wp-card wp-card--wide">
+            <header class="wp-card__head">
+              <h2>WordPress Events and News</h2>
+              <button type="button">▲</button>
+            </header>
+            <div class="wp-card__body">
+              <p>Attend an upcoming event near you or catch up on the latest WordPress news.</p>
+              <ul class="wp-news">
+                <li><a href="#">WordPress maintenance release available</a></li>
+                <li><a href="#">Community updates and editor improvements</a></li>
+                <li><a href="#">New block patterns for faster publishing</a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
