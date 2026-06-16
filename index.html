@@ -1,569 +1,755 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="uk">
-<head>
-  <base href="/">
-  <meta charset="UTF-8">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FunnelGrid — SEO, контент-маркетинг, просування сайтів</title>
-  <meta name="description" content="FunnelGrid — агентство з просування сайтів. SEO-оптимізація, контент-маркетинг, таргетована реклама, SMM. Залучаємо трафік, що конвертується.">
-  <meta property="og:title" content="FunnelGrid — просування сайтів та контент-маркетинг">
-  <meta property="og:description" content="Збільшуємо органічний трафік, виводимо в топ пошукових систем, будуємо впізнаваність бренду.">
-  <meta property="og:type" content="website">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunnelGrid — SEO, контент-маркетинг, просування сайтів</title>
+    <meta
+      name="description"
+      content="FunnelGrid — агентство з просування сайтів. SEO-оптимізація, контент-маркетинг, таргетована реклама, SMM. Залучаємо трафік, що конвертується."
+    />
+    <meta
+      property="og:title"
+      content="FunnelGrid — просування сайтів та контент-маркетинг"
+    />
+    <meta
+      property="og:description"
+      content="Збільшуємо органічний трафік, виводимо в топ пошукових систем, будуємо впізнаваність бренду."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TOP STRIP -->
+    <div class="top-strip">
+      <span>Безкоштовний SEO-аудит сайту — залиште заявку сьогодні</span>
+      <a href="/contacts/">Отримати аудит →</a>
+    </div>
 
-<!-- TOP STRIP -->
-<div class="top-strip">
-  <span>Безкоштовний SEO-аудит сайту — залиште заявку сьогодні</span>
-  <a href="/contacts/">Отримати аудит →</a>
-</div>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__inner">
+        <nav class="nav">
+          <a href="/services/">Послуги</a>
+          <a href="/cases/">Кейси</a>
+          <a href="/tariffs/">Тарифи</a>
+          <a href="/blog/">Блог</a>
+          <a href="/contacts/">Контакти</a>
+        </nav>
+        <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+        <a href="/" class="logo">
+          <div class="logo__mark">FG</div>
+          FunnelGrid
+        </a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="header__inner">
-    <nav class="nav">
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu__close" id="menuClose">✕</button>
       <a href="/services/">Послуги</a>
       <a href="/cases/">Кейси</a>
       <a href="/tariffs/">Тарифи</a>
       <a href="/blog/">Блог</a>
       <a href="/contacts/">Контакти</a>
-    </nav>
-    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
-    <a href="/" class="logo">
-      <div class="logo__mark">FG</div>
-      FunnelGrid
-    </a>
-    <div class="burger" id="burger">
-      <span></span><span></span><span></span>
+      <a href="/contacts/" class="mobile-audit">Безкоштовний аудит сайту</a>
     </div>
-  </div>
-</header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu__close" id="menuClose">✕</button>
-  <a href="/services/">Послуги</a>
-  <a href="/cases/">Кейси</a>
-  <a href="/tariffs/">Тарифи</a>
-  <a href="/blog/">Блог</a>
-  <a href="/contacts/">Контакти</a>
-  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит сайту</a>
-</div>
-
-<div class="page">
-
-  <!-- HERO -->
-  <section style="border-bottom: 1px solid var(--border);">
-    <div class="hero">
-      <div class="hero__panel anim-fade anim-d2">
-        <img class="hero__panel-img"
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=85&fit=crop"
-          alt="Зростання трафіку та позицій сайту">
-        <div class="hero__panel-body">
-          <div class="hero__panel-title">Середні результати клієнтів</div>
-          <div class="hero__metrics">
-            <div class="hero__metric">
-              <div class="hero__metric-val">+<span>340</span>%</div>
-              <div class="hero__metric-label">Органічний трафік за 6 міс</div>
-            </div>
-            <div class="hero__metric">
-              <div class="hero__metric-val">Топ<span>3</span></div>
-              <div class="hero__metric-label">Позиції Google за ключами</div>
-            </div>
-            <div class="hero__metric">
-              <div class="hero__metric-val"><span>2.4</span>x</div>
-              <div class="hero__metric-label">Зростання конверсій</div>
-            </div>
-            <div class="hero__metric">
-              <div class="hero__metric-val"><span>94</span>%</div>
-              <div class="hero__metric-label">Клієнтів продовжують</div>
+    <div class="page">
+      <!-- HERO -->
+      <section style="border-bottom: 1px solid var(--border)">
+        <div class="hero">
+          <div class="hero__panel anim-fade anim-d2">
+            <img
+              class="hero__panel-img"
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=85&fit=crop"
+              alt="Зростання трафіку та позицій сайту"
+            />
+            <div class="hero__panel-body">
+              <div class="hero__panel-title">Середні результати клієнтів</div>
+              <div class="hero__metrics">
+                <div class="hero__metric">
+                  <div class="hero__metric-val">+<span>340</span>%</div>
+                  <div class="hero__metric-label">
+                    Органічний трафік за 6 міс
+                  </div>
+                </div>
+                <div class="hero__metric">
+                  <div class="hero__metric-val">Топ<span>10</span></div>
+                  <div class="hero__metric-label">
+                    Позиції Google за ключами
+                  </div>
+                </div>
+                <div class="hero__metric">
+                  <div class="hero__metric-val"><span>2.4</span>x</div>
+                  <div class="hero__metric-label">Зростання конверсій</div>
+                </div>
+                <div class="hero__metric">
+                  <div class="hero__metric-val"><span>94</span>%</div>
+                  <div class="hero__metric-label">Клієнтів продовжують</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="hero__content">
-        <div class="hero__eyebrow anim-up">Агентство просування сайтів</div>
-        <h1 class="hero__title anim-up anim-d1">
-          Виводимо ваш сайт у <em>топ</em> пошукових систем
-        </h1>
-        <p class="hero__desc anim-up anim-d2">
-          SEO-просування, контент-маркетинг, таргетована реклама та SMM — комплексне просування без розробки. Тільки результат.
-        </p>
-        <div class="hero__actions anim-up anim-d3">
-          <a href="/contacts/" class="btn-primary">Отримати аудит безкоштовно ↗</a>
-          <a href="/cases/" class="btn-secondary">Наші кейси →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TICKER -->
-  <div class="ticker-wrap">
-    <div class="ticker-inner">
-      <span class="ticker-item">SEO-просування</span>
-      <span class="ticker-item">Контент-маркетинг</span>
-      <span class="ticker-item">Google Ads</span>
-      <span class="ticker-item">SMM та таргет</span>
-      <span class="ticker-item">Email-маркетинг</span>
-      <span class="ticker-item">Linkbuilding</span>
-      <span class="ticker-item">Репутація в мережі</span>
-      <span class="ticker-item">Аналітика та звіти</span>
-      <span class="ticker-item">SEO-просування</span>
-      <span class="ticker-item">Контент-маркетинг</span>
-      <span class="ticker-item">Google Ads</span>
-      <span class="ticker-item">SMM та таргет</span>
-      <span class="ticker-item">Email-маркетинг</span>
-      <span class="ticker-item">Linkbuilding</span>
-      <span class="ticker-item">Репутація в мережі</span>
-      <span class="ticker-item">Аналітика та звіти</span>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <section class="section section-border">
-    <div class="section__head">
-      <div class="section__head-left">
-        <div class="section-eyebrow">Що ми робимо</div>
-        <h2 class="section__title">Послуги просування<br>та маркетингу</h2>
-      </div>
-      <a href="/services/" class="link-all">Всі послуги →</a>
-    </div>
-    <div class="services-grid">
-
-      <div class="svc-card anim-up">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        </div>
-        <div class="svc-card__num">/01</div>
-        <h3 class="svc-card__title">SEO-просування</h3>
-        <p class="svc-card__desc">Технічна оптимізація, семантичне ядро, on-page та off-page SEO. Стабільне зростання органічного трафіку.</p>
-        <a href="/services/#seo" class="svc-card__link">Детальніше →</a>
-      </div>
-
-      <div class="svc-card anim-up anim-d1">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><line x1="10" y1="9" x2="8" y2="9"/></svg>
-        </div>
-        <div class="svc-card__num">/02</div>
-        <h3 class="svc-card__title">Контент-маркетинг</h3>
-        <p class="svc-card__desc">Стратегія, написання текстів, блог, лендинги. Контент, який залучає аудиторію та закриває на дію.</p>
-        <a href="/services/#content" class="svc-card__link">Детальніше →</a>
-      </div>
-
-      <div class="svc-card anim-up anim-d2">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <div class="svc-card__num">/03</div>
-        <h3 class="svc-card__title">Google Ads</h3>
-        <p class="svc-card__desc">Налаштування та ведення рекламних кампаній у Google Search, Display, Shopping. Мінімальна вартість кліку.</p>
-        <a href="/services/#google-ads" class="svc-card__link">Детальніше →</a>
-      </div>
-
-      <div class="svc-card anim-up anim-d3">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </div>
-        <div class="svc-card__num">/04</div>
-        <h3 class="svc-card__title">SMM та таргетована реклама</h3>
-        <p class="svc-card__desc">Ведення соцмереж, контент-план, таргетована реклама в Instagram, Facebook, TikTok.</p>
-        <a href="/services/#smm" class="svc-card__link">Детальніше →</a>
-      </div>
-
-      <div class="svc-card anim-up anim-d4">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </div>
-        <div class="svc-card__num">/05</div>
-        <h3 class="svc-card__title">Email-маркетинг</h3>
-        <p class="svc-card__desc">Автоматизовані розсилки, тригерні листи, прогрів бази. ROI email-маркетингу в середньому 4200%.</p>
-        <a href="/services/#email" class="svc-card__link">Детальніше →</a>
-      </div>
-
-      <div class="svc-card anim-up anim-d5">
-        <div class="svc-card__icon">
-          <svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-        </div>
-        <div class="svc-card__num">/06</div>
-        <h3 class="svc-card__title">Нарощування посилань</h3>
-        <p class="svc-card__desc">Якісний linkbuilding на авторитетних ресурсах. Підвищення DA/DR, довіри пошукових систем.</p>
-        <a href="/services/#links" class="svc-card__link">Детальніше →</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <div class="process-strip">
-    <div class="process-inner">
-      <div class="section-eyebrow">Як ми працюємо</div>
-      <h2 class="section__title" style="max-width:560px; margin-top:16px;">П'ять кроків до зростання вашого сайту</h2>
-      <div class="process-steps">
-        <div class="process-step anim-up">
-          <div class="process-step__dot">01</div>
-          <div class="process-step__title">Аудит</div>
-          <div class="process-step__desc">Технічний та SEO аналіз поточного стану сайту</div>
-        </div>
-        <div class="process-step anim-up anim-d1">
-          <div class="process-step__dot">02</div>
-          <div class="process-step__title">Стратегія</div>
-          <div class="process-step__desc">Формуємо дорожню карту просування на 3–6 місяців</div>
-        </div>
-        <div class="process-step anim-up anim-d2">
-          <div class="process-step__dot">03</div>
-          <div class="process-step__title">Запуск</div>
-          <div class="process-step__desc">Впроваджуємо зміни та запускаємо рекламні кампанії</div>
-        </div>
-        <div class="process-step anim-up anim-d3">
-          <div class="process-step__dot">04</div>
-          <div class="process-step__title">Оптимізація</div>
-          <div class="process-step__desc">Постійний моніторинг і покращення показників</div>
-        </div>
-        <div class="process-step anim-up anim-d4">
-          <div class="process-step__dot">05</div>
-          <div class="process-step__title">Звітність</div>
-          <div class="process-step__desc">Прозорі звіти щомісяця з чіткими метриками</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- STATS BAND -->
-  <div class="stats-band">
-    <div class="stats-band__inner">
-      <div class="stat-block anim-up">
-        <div class="stat-block__num">3<sup>+</sup></div>
-        <div class="stat-block__label">Років на ринку digital-маркетингу</div>
-      </div>
-      <div class="stat-block anim-up anim-d1">
-        <div class="stat-block__num">120<sup>+</sup></div>
-        <div class="stat-block__label">Успішних проектів з просування</div>
-      </div>
-      <div class="stat-block anim-up anim-d2">
-        <div class="stat-block__num">340<sup>%</sup></div>
-        <div class="stat-block__label">Середнє зростання трафіку клієнтів</div>
-      </div>
-      <div class="stat-block anim-up anim-d3">
-        <div class="stat-block__num">94<sup>%</sup></div>
-        <div class="stat-block__label">Клієнтів продовжують співпрацю</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CASES -->
-  <section class="section section-border">
-    <div class="section__head">
-      <div class="section__head-left">
-        <div class="section-eyebrow">Результати клієнтів</div>
-        <h2 class="section__title">Кейси та реальні<br>показники зростання</h2>
-      </div>
-      <a href="/cases/" class="link-all">Всі кейси →</a>
-    </div>
-    <div class="cases-grid">
-      <div class="case-card anim-up">
-        <img class="case-card__img"
-          src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=85&fit=crop"
-          alt="Інтернет-магазин електроніки — кейс SEO">
-        <div class="case-card__body">
-          <div class="case-card__tags">
-            <span class="tag tag--accent">SEO</span>
-            <span class="tag">Контент</span>
-            <span class="tag">Інтернет-магазин</span>
-          </div>
-          <h3 class="case-card__title">Магазин електроніки — +410% трафіку</h3>
-          <p class="case-card__desc">Вивели 380 ключових слів у топ-10 Google за 4 місяці SEO-просування та контент-стратегії.</p>
-          <div class="case-card__result">
-            <strong>+410%</strong> органічний трафік за 4 місяці
+          <div class="hero__content">
+            <div class="hero__eyebrow anim-up">Агентство просування сайтів</div>
+            <h1 class="hero__title anim-up anim-d1">
+              Виводимо ваш сайт у <em>топ</em> пошукових систем
+            </h1>
+            <p class="hero__desc anim-up anim-d2">
+              SEO-просування, контент-маркетинг, таргетована реклама та SMM —
+              комплексне просування без розробки. Тільки результат.
+            </p>
+            <div class="hero__actions anim-up anim-d3">
+              <a href="/contacts/" class="btn-primary"
+                >Отримати аудит безкоштовно ↗</a
+              >
+              <a href="/cases/" class="btn-secondary">Наші кейси →</a>
+            </div>
           </div>
         </div>
+      </section>
+
+      <!-- TICKER -->
+      <div class="ticker-wrap">
+        <div class="ticker-inner">
+          <span class="ticker-item">SEO-просування</span>
+          <span class="ticker-item">Контент-маркетинг</span>
+          <span class="ticker-item">Google Ads</span>
+          <span class="ticker-item">SMM та таргет</span>
+          <span class="ticker-item">Email-маркетинг</span>
+          <span class="ticker-item">Linkbuilding</span>
+          <span class="ticker-item">Репутація в мережі</span>
+          <span class="ticker-item">Аналітика та звіти</span>
+          <span class="ticker-item">SEO-просування</span>
+          <span class="ticker-item">Контент-маркетинг</span>
+          <span class="ticker-item">Google Ads</span>
+          <span class="ticker-item">SMM та таргет</span>
+          <span class="ticker-item">Email-маркетинг</span>
+          <span class="ticker-item">Linkbuilding</span>
+          <span class="ticker-item">Репутація в мережі</span>
+          <span class="ticker-item">Аналітика та звіти</span>
+        </div>
       </div>
-      <div class="case-card anim-up anim-d1">
-        <img class="case-card__img"
-          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85&fit=crop"
-          alt="Освітня платформа — контент-маркетинг кейс">
-        <div class="case-card__body">
-          <div class="case-card__tags">
-            <span class="tag tag--accent">Контент</span>
-            <span class="tag">Email</span>
-            <span class="tag">Освіта</span>
+
+      <!-- SERVICES -->
+      <section class="section section-border">
+        <div class="section__head">
+          <div class="section__head-left">
+            <div class="section-eyebrow">Що ми робимо</div>
+            <h2 class="section__title">
+              Послуги просування<br />та маркетингу
+            </h2>
           </div>
-          <h3 class="case-card__title">EdTech платформа — x3.2 реєстрацій</h3>
-          <p class="case-card__desc">Контент-стратегія та email-автоматизація збільшили конверсії в реєстрацію в 3.2 рази за 5 місяців.</p>
-          <div class="case-card__result">
-            <strong>x3.2</strong> реєстрацій через органічний канал
+          <a href="/services/" class="link-all">Всі послуги →</a>
+        </div>
+        <div class="services-grid">
+          <div class="svc-card anim-up">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+            </div>
+            <div class="svc-card__num">/01</div>
+            <h3 class="svc-card__title">SEO-просування</h3>
+            <p class="svc-card__desc">
+              Технічна оптимізація, семантичне ядро, on-page та off-page SEO.
+              Стабільне зростання органічного трафіку.
+            </p>
+            <a href="/services/#seo" class="svc-card__link">Детальніше →</a>
+          </div>
+
+          <div class="svc-card anim-up anim-d1">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14,2 14,8 20,8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <line x1="10" y1="9" x2="8" y2="9" />
+              </svg>
+            </div>
+            <div class="svc-card__num">/02</div>
+            <h3 class="svc-card__title">Контент-маркетинг</h3>
+            <p class="svc-card__desc">
+              Стратегія, написання текстів, блог, лендинги. Контент, який
+              залучає аудиторію та закриває на дію.
+            </p>
+            <a href="/services/#content" class="svc-card__link">Детальніше →</a>
+          </div>
+
+          <div class="svc-card anim-up anim-d2">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div class="svc-card__num">/03</div>
+            <h3 class="svc-card__title">Google Ads</h3>
+            <p class="svc-card__desc">
+              Налаштування та ведення рекламних кампаній у Google Search,
+              Display, Shopping. Мінімальна вартість кліку.
+            </p>
+            <a href="/services/#google-ads" class="svc-card__link"
+              >Детальніше →</a
+            >
+          </div>
+
+          <div class="svc-card anim-up anim-d3">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </div>
+            <div class="svc-card__num">/04</div>
+            <h3 class="svc-card__title">SMM та таргетована реклама</h3>
+            <p class="svc-card__desc">
+              Ведення соцмереж, контент-план, таргетована реклама в Instagram,
+              Facebook, TikTok.
+            </p>
+            <a href="/services/#smm" class="svc-card__link">Детальніше →</a>
+          </div>
+
+          <div class="svc-card anim-up anim-d4">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div class="svc-card__num">/05</div>
+            <h3 class="svc-card__title">Email-маркетинг</h3>
+            <p class="svc-card__desc">
+              Автоматизовані розсилки, тригерні листи, прогрів бази. ROI
+              email-маркетингу в середньому 4200%.
+            </p>
+            <a href="/services/#email" class="svc-card__link">Детальніше →</a>
+          </div>
+
+          <div class="svc-card anim-up anim-d5">
+            <div class="svc-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                />
+              </svg>
+            </div>
+            <div class="svc-card__num">/06</div>
+            <h3 class="svc-card__title">Нарощування посилань</h3>
+            <p class="svc-card__desc">
+              Якісний linkbuilding на авторитетних ресурсах. Підвищення DA/DR,
+              довіри пошукових систем.
+            </p>
+            <a href="/services/#links" class="svc-card__link">Детальніше →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <div class="process-strip">
+        <div class="process-inner">
+          <div class="section-eyebrow">Як ми працюємо</div>
+          <h2 class="section__title" style="max-width: 560px; margin-top: 16px">
+            П'ять кроків до зростання вашого сайту
+          </h2>
+          <div class="process-steps">
+            <div class="process-step anim-up">
+              <div class="process-step__dot">01</div>
+              <div class="process-step__title">Аудит</div>
+              <div class="process-step__desc">
+                Технічний та SEO аналіз поточного стану сайту
+              </div>
+            </div>
+            <div class="process-step anim-up anim-d1">
+              <div class="process-step__dot">02</div>
+              <div class="process-step__title">Стратегія</div>
+              <div class="process-step__desc">
+                Формуємо дорожню карту просування на 3–6 місяців
+              </div>
+            </div>
+            <div class="process-step anim-up anim-d2">
+              <div class="process-step__dot">03</div>
+              <div class="process-step__title">Запуск</div>
+              <div class="process-step__desc">
+                Впроваджуємо зміни та запускаємо рекламні кампанії
+              </div>
+            </div>
+            <div class="process-step anim-up anim-d3">
+              <div class="process-step__dot">04</div>
+              <div class="process-step__title">Оптимізація</div>
+              <div class="process-step__desc">
+                Постійний моніторинг і покращення показників
+              </div>
+            </div>
+            <div class="process-step anim-up anim-d4">
+              <div class="process-step__dot">05</div>
+              <div class="process-step__title">Звітність</div>
+              <div class="process-step__desc">
+                Прозорі звіти щомісяця з чіткими метриками
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="case-card anim-up anim-d2">
-        <img class="case-card__img"
-          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=85&fit=crop"
-          alt="Фітнес-клуб — SMM та таргет кейс">
-        <div class="case-card__body">
-          <div class="case-card__tags">
-            <span class="tag tag--accent">SMM</span>
-            <span class="tag">Таргет</span>
-            <span class="tag">Фітнес</span>
-          </div>
-          <h3 class="case-card__title">Мережа фітнес-клубів — 2200 лідів</h3>
-          <p class="case-card__desc">Таргетована реклама в Instagram та Facebook дала 2200 якісних лідів за перший місяць кампанії.</p>
-          <div class="case-card__result">
-            <strong>2200</strong> лідів за місяць, CPA знижено на 62%
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section section-border">
-    <div class="section__head">
-      <div class="section__head-left">
-        <div class="section-eyebrow">Відгуки</div>
-        <h2 class="section__title">Що кажуть<br>наші клієнти</h2>
-      </div>
-    </div>
-    <div class="testimonials-grid">
-      <div class="testi-card anim-up">
-        <div class="testi-card__stars">
-          <span class="testi-card__star">★</span><span class="testi-card__star">★</span>
-          <span class="testi-card__star">★</span><span class="testi-card__star">★</span>
-          <span class="testi-card__star">★</span>
+      <!-- STATS BAND -->
+      <div class="stats-band">
+        <div class="stats-band__inner">
+          <div class="stat-block anim-up">
+            <div class="stat-block__num">3<sup>+</sup></div>
+            <div class="stat-block__label">
+              Років на ринку digital-маркетингу
+            </div>
+          </div>
+          <div class="stat-block anim-up anim-d1">
+            <div class="stat-block__num">120<sup>+</sup></div>
+            <div class="stat-block__label">Успішних проектів з просування</div>
+          </div>
+          <div class="stat-block anim-up anim-d2">
+            <div class="stat-block__num">340<sup>%</sup></div>
+            <div class="stat-block__label">
+              Середнє зростання трафіку клієнтів
+            </div>
+          </div>
+          <div class="stat-block anim-up anim-d3">
+            <div class="stat-block__num">94<sup>%</sup></div>
+            <div class="stat-block__label">Клієнтів продовжують співпрацю</div>
+          </div>
         </div>
-        <p class="testi-card__text">«За 4 місяці органічний трафік виріс більш ніж у 4 рази. Раніше пробували самостійно — нічого не виходило. З FunnelGrid все стало зрозуміло: чіткий план, реальна звітність і головне — результат.»</p>
-        <div class="testi-card__author">
-          <img class="testi-card__avatar"
-            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&fit=crop&crop=face"
-            alt="Богдан Р.">
+      </div>
+
+      <!-- CASES -->
+      <section class="section section-border">
+        <div class="section__head">
+          <div class="section__head-left">
+            <div class="section-eyebrow">Результати клієнтів</div>
+            <h2 class="section__title">
+              Кейси та реальні<br />показники зростання
+            </h2>
+          </div>
+          <a href="/cases/" class="link-all">Всі кейси →</a>
+        </div>
+        <div class="cases-grid">
+          <div class="case-card anim-up">
+            <img
+              class="case-card__img"
+              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=85&fit=crop"
+              alt="Інтернет-магазин електроніки — кейс SEO"
+            />
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="tag tag--accent">SEO</span>
+                <span class="tag">Контент</span>
+                <span class="tag">Інтернет-магазин</span>
+              </div>
+              <h3 class="case-card__title">
+                Магазин електроніки — +410% трафіку
+              </h3>
+              <p class="case-card__desc">
+                Вивели 380 ключових слів у топ-10 Google за 4 місяці
+                SEO-просування та контент-стратегії.
+              </p>
+              <div class="case-card__result">
+                <strong>+410%</strong> органічний трафік за 4 місяці
+              </div>
+            </div>
+          </div>
+          <div class="case-card anim-up anim-d1">
+            <img
+              class="case-card__img"
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85&fit=crop"
+              alt="Освітня платформа — контент-маркетинг кейс"
+            />
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="tag tag--accent">Контент</span>
+                <span class="tag">Email</span>
+                <span class="tag">Освіта</span>
+              </div>
+              <h3 class="case-card__title">
+                EdTech платформа — x3.2 реєстрацій
+              </h3>
+              <p class="case-card__desc">
+                Контент-стратегія та email-автоматизація збільшили конверсії в
+                реєстрацію в 3.2 рази за 5 місяців.
+              </p>
+              <div class="case-card__result">
+                <strong>x3.2</strong> реєстрацій через органічний канал
+              </div>
+            </div>
+          </div>
+          <div class="case-card anim-up anim-d2">
+            <img
+              class="case-card__img"
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=85&fit=crop"
+              alt="Фітнес-клуб — SMM та таргет кейс"
+            />
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="tag tag--accent">SMM</span>
+                <span class="tag">Таргет</span>
+                <span class="tag">Фітнес</span>
+              </div>
+              <h3 class="case-card__title">
+                Мережа фітнес-клубів — 2200 лідів
+              </h3>
+              <p class="case-card__desc">
+                Таргетована реклама в Instagram та Facebook дала 2200 якісних
+                лідів за перший місяць кампанії.
+              </p>
+              <div class="case-card__result">
+                <strong>2200</strong> лідів за місяць, CPA знижено на 62%
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section section-border">
+        <div class="section__head">
+          <div class="section__head-left">
+            <div class="section-eyebrow">Відгуки</div>
+            <h2 class="section__title">Що кажуть<br />наші клієнти</h2>
+          </div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testi-card anim-up">
+            <div class="testi-card__stars">
+              <span class="testi-card__star">★</span
+              ><span class="testi-card__star">★</span>
+              <span class="testi-card__star">★</span
+              ><span class="testi-card__star">★</span>
+              <span class="testi-card__star">★</span>
+            </div>
+            <p class="testi-card__text">
+              «За 4 місяці органічний трафік виріс більш ніж у 4 рази. Раніше
+              пробували самостійно — нічого не виходило. З FunnelGrid все стало
+              зрозуміло: чіткий план, реальна звітність і головне — результат.»
+            </p>
+            <div class="testi-card__author">
+              <img
+                class="testi-card__avatar"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&fit=crop&crop=face"
+                alt="Богдан Р."
+              />
+              <div>
+                <div class="testi-card__name">Богдан Романюк</div>
+                <div class="testi-card__role">
+                  Власник інтернет-магазину «DigitroUA»
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card anim-up anim-d1">
+            <div class="testi-card__stars">
+              <span class="testi-card__star">★</span
+              ><span class="testi-card__star">★</span>
+              <span class="testi-card__star">★</span
+              ><span class="testi-card__star">★</span>
+              <span class="testi-card__star">★</span>
+            </div>
+            <p class="testi-card__text">
+              «Команда FunnelGrid перебудувала нашу контент-стратегію з нуля.
+              Блог почав приносити реальні заявки. Email-воронка дає стабільні
+              продажі без жодних додаткових витрат на рекламу.»
+            </p>
+            <div class="testi-card__author">
+              <img
+                class="testi-card__avatar"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&fit=crop&crop=face"
+                alt="Наталія В."
+              />
+              <div>
+                <div class="testi-card__name">Наталія Василенко</div>
+                <div class="testi-card__role">
+                  Засновниця онлайн-школи «LearnPoint»
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TARIFFS PREVIEW -->
+      <section class="section section-border">
+        <div class="section__head">
+          <div class="section__head-left">
+            <div class="section-eyebrow">Тарифи</div>
+            <h2 class="section__title">
+              Прозорі ціни<br />без прихованих платежів
+            </h2>
+          </div>
+          <a href="/tariffs/" class="link-all">Всі тарифи →</a>
+        </div>
+        <div class="tariffs-grid">
+          <div class="tariff-card anim-up">
+            <div class="tariff-card__name">Старт</div>
+            <div class="tariff-card__price">9 900<sub> грн</sub></div>
+            <div class="tariff-card__period">на місяць</div>
+            <div class="tariff-card__desc">
+              Для малого бізнесу та стартапів, що тільки починають просування в
+              інтернеті.
+            </div>
+            <ul class="tariff-card__features">
+              <li class="tariff-card__feature">SEO-аудит та впровадження</li>
+              <li class="tariff-card__feature">До 50 ключових слів</li>
+              <li class="tariff-card__feature">4 SEO-статті на місяць</li>
+              <li class="tariff-card__feature">Технічна оптимізація</li>
+              <li class="tariff-card__feature">Щомісячний звіт</li>
+            </ul>
+            <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
+          </div>
+          <div class="tariff-card tariff-card--featured anim-up anim-d1">
+            <div class="tariff-card__badge">Популярний</div>
+            <div class="tariff-card__name">Бізнес</div>
+            <div class="tariff-card__price">19 900<sub> грн</sub></div>
+            <div class="tariff-card__period">на місяць</div>
+            <div class="tariff-card__desc">
+              Комплексне просування для компаній, що хочуть лідирувати у своїй
+              ніші.
+            </div>
+            <ul class="tariff-card__features">
+              <li class="tariff-card__feature">Повний SEO-супровід</li>
+              <li class="tariff-card__feature">До 200 ключових слів</li>
+              <li class="tariff-card__feature">8 статей + 20 постів SMM</li>
+              <li class="tariff-card__feature">Google Ads ведення</li>
+              <li class="tariff-card__feature">Email-маркетинг</li>
+              <li class="tariff-card__feature">Звіти раз на 2 тижні</li>
+            </ul>
+            <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
+          </div>
+          <div class="tariff-card anim-up anim-d2">
+            <div class="tariff-card__name">Преміум</div>
+            <div class="tariff-card__price">39 900<sub> грн</sub></div>
+            <div class="tariff-card__period">на місяць</div>
+            <div class="tariff-card__desc">
+              Повне маркетингове агентство на аутсорсі для амбітних брендів.
+            </div>
+            <ul class="tariff-card__features">
+              <li class="tariff-card__feature">Необмежені ключові слова</li>
+              <li class="tariff-card__feature">Повний контент-менеджмент</li>
+              <li class="tariff-card__feature">Всі канали реклами</li>
+              <li class="tariff-card__feature">Linkbuilding</li>
+              <li class="tariff-card__feature">Репутаційний маркетинг</li>
+              <li class="tariff-card__feature">Персональний маркетолог</li>
+            </ul>
+            <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG PREVIEW -->
+      <section class="section section-border">
+        <div class="section__head">
+          <div class="section__head-left">
+            <div class="section-eyebrow">Блог</div>
+            <h2 class="section__title">
+              Корисне про маркетинг<br />та просування
+            </h2>
+          </div>
+          <a href="/blog/" class="link-all">Всі статті →</a>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card blog-card--big anim-up">
+            <img
+              class="blog-card__img"
+              src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=85&fit=crop"
+              alt="SEO тренди 2025"
+            />
+            <div class="blog-card__body">
+              <div class="blog-card__cat">SEO</div>
+              <h3 class="blog-card__title">
+                10 SEO-трендів 2025, які вже змінюють видачу Google
+              </h3>
+              <p class="blog-card__excerpt">
+                AI-generated content, E-E-A-T сигнали, Core Web Vitals нового
+                покоління — що врахувати в стратегії просування вже зараз.
+              </p>
+              <div class="blog-card__meta">15 травня 2025 · 8 хв читання</div>
+            </div>
+          </div>
+          <div class="blog-card anim-up anim-d1">
+            <img
+              class="blog-card__img"
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=85&fit=crop"
+              alt="Контент-маркетинг для B2B"
+            />
+            <div class="blog-card__body">
+              <div class="blog-card__cat">Контент</div>
+              <h3 class="blog-card__title">
+                Контент-маркетинг для B2B: стратегія, що дає ліди
+              </h3>
+              <p class="blog-card__excerpt">
+                Як перетворити корпоративний блог на машину генерації якісних
+                заявок.
+              </p>
+              <div class="blog-card__meta">8 травня 2025 · 6 хв</div>
+            </div>
+          </div>
+          <div class="blog-card anim-up anim-d2">
+            <img
+              class="blog-card__img"
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=85&fit=crop"
+              alt="SMM стратегія 2025"
+            />
+            <div class="blog-card__body">
+              <div class="blog-card__cat">SMM</div>
+              <h3 class="blog-card__title">
+                SMM у 2025: алгоритми змінились — змінюйся і ти
+              </h3>
+              <p class="blog-card__excerpt">
+                Що працює в Instagram та TikTok після оновлень алгоритмів і як
+                адаптувати контент-план.
+              </p>
+              <div class="blog-card__meta">1 травня 2025 · 5 хв</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BAND -->
+      <div class="cta-band">
+        <div class="cta-band__inner">
           <div>
-            <div class="testi-card__name">Богдан Романюк</div>
-            <div class="testi-card__role">Власник інтернет-магазину «DigitroUA»</div>
+            <h2 class="cta-band__title">
+              Готові збільшити трафік та продажі вашого сайту?
+            </h2>
+            <p class="cta-band__desc">
+              Залиште заявку — проведемо безкоштовний аудит та запропонуємо
+              стратегію просування протягом 24 годин.
+            </p>
           </div>
+          <a href="/contacts/" class="btn-white"
+            >Отримати безкоштовний аудит →</a
+          >
         </div>
       </div>
-      <div class="testi-card anim-up anim-d1">
-        <div class="testi-card__stars">
-          <span class="testi-card__star">★</span><span class="testi-card__star">★</span>
-          <span class="testi-card__star">★</span><span class="testi-card__star">★</span>
-          <span class="testi-card__star">★</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer__col">
+          <div class="footer__col-title">Послуги</div>
+          <ul>
+            <li><a href="/services/#seo">SEO-просування</a></li>
+            <li><a href="/services/#content">Контент-маркетинг</a></li>
+            <li><a href="/services/#google-ads">Google Ads</a></li>
+            <li><a href="/services/#smm">SMM та таргет</a></li>
+            <li><a href="/services/#email">Email-маркетинг</a></li>
+            <li><a href="/services/#links">Linkbuilding</a></li>
+          </ul>
         </div>
-        <p class="testi-card__text">«Команда FunnelGrid перебудувала нашу контент-стратегію з нуля. Блог почав приносити реальні заявки. Email-воронка дає стабільні продажі без жодних додаткових витрат на рекламу.»</p>
-        <div class="testi-card__author">
-          <img class="testi-card__avatar"
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&fit=crop&crop=face"
-            alt="Наталія В.">
-          <div>
-            <div class="testi-card__name">Наталія Василенко</div>
-            <div class="testi-card__role">Засновниця онлайн-школи «LearnPoint»</div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Компанія</div>
+          <ul>
+            <li><a href="/cases/">Кейси</a></li>
+            <li><a href="/tariffs/">Тарифи</a></li>
+            <li><a href="/blog/">Блог</a></li>
+            <li><a href="/contacts/">Контакти</a></li>
+            <li><a href="/contacts/">Безкоштовний аудит</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <div class="footer__col-title">Документи</div>
+          <ul>
+            <li><a href="/privacy/">Конфіденційність</a></li>
+            <li><a href="/offer/">Публічна оферта</a></li>
+            <li><a href="/terms/">Умови використання</a></li>
+            <li><a href="/cookies/">Політика Cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__brand">
+          <div class="footer__brand-logo">
+            <div class="footer__brand-mark">FG</div>
+            FunnelGrid
           </div>
+          <p class="footer__brand-desc">
+            Агентство з просування сайтів. SEO, контент-маркетинг, таргетована
+            реклама, SMM та email-маркетинг. Реальні результати — прозора
+            звітність.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="footer-bottom">
+        <span class="footer-bottom__copy"
+          >2026 © FunnelGrid. Всі права захищені.</span
+        >
+      </div>
+    </footer>
 
-  <!-- TARIFFS PREVIEW -->
-  <section class="section section-border">
-    <div class="section__head">
-      <div class="section__head-left">
-        <div class="section-eyebrow">Тарифи</div>
-        <h2 class="section__title">Прозорі ціни<br>без прихованих платежів</h2>
-      </div>
-      <a href="/tariffs/" class="link-all">Всі тарифи →</a>
-    </div>
-    <div class="tariffs-grid">
-      <div class="tariff-card anim-up">
-        <div class="tariff-card__name">Старт</div>
-        <div class="tariff-card__price">9 900<sub> грн</sub></div>
-        <div class="tariff-card__period">на місяць</div>
-        <div class="tariff-card__desc">Для малого бізнесу та стартапів, що тільки починають просування в інтернеті.</div>
-        <ul class="tariff-card__features">
-          <li class="tariff-card__feature">SEO-аудит та впровадження</li>
-          <li class="tariff-card__feature">До 50 ключових слів</li>
-          <li class="tariff-card__feature">4 SEO-статті на місяць</li>
-          <li class="tariff-card__feature">Технічна оптимізація</li>
-          <li class="tariff-card__feature">Щомісячний звіт</li>
-        </ul>
-        <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
-      </div>
-      <div class="tariff-card tariff-card--featured anim-up anim-d1">
-        <div class="tariff-card__badge">Популярний</div>
-        <div class="tariff-card__name">Бізнес</div>
-        <div class="tariff-card__price">19 900<sub> грн</sub></div>
-        <div class="tariff-card__period">на місяць</div>
-        <div class="tariff-card__desc">Комплексне просування для компаній, що хочуть лідирувати у своїй ніші.</div>
-        <ul class="tariff-card__features">
-          <li class="tariff-card__feature">Повний SEO-супровід</li>
-          <li class="tariff-card__feature">До 200 ключових слів</li>
-          <li class="tariff-card__feature">8 статей + 20 постів SMM</li>
-          <li class="tariff-card__feature">Google Ads ведення</li>
-          <li class="tariff-card__feature">Email-маркетинг</li>
-          <li class="tariff-card__feature">Звіти раз на 2 тижні</li>
-        </ul>
-        <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
-      </div>
-      <div class="tariff-card anim-up anim-d2">
-        <div class="tariff-card__name">Преміум</div>
-        <div class="tariff-card__price">39 900<sub> грн</sub></div>
-        <div class="tariff-card__period">на місяць</div>
-        <div class="tariff-card__desc">Повне маркетингове агентство на аутсорсі для амбітних брендів.</div>
-        <ul class="tariff-card__features">
-          <li class="tariff-card__feature">Необмежені ключові слова</li>
-          <li class="tariff-card__feature">Повний контент-менеджмент</li>
-          <li class="tariff-card__feature">Всі канали реклами</li>
-          <li class="tariff-card__feature">Linkbuilding</li>
-          <li class="tariff-card__feature">Репутаційний маркетинг</li>
-          <li class="tariff-card__feature">Персональний маркетолог</li>
-        </ul>
-        <a href="/contacts/" class="tariff-card__btn">Обрати тариф</a>
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+      <p>
+        Ми використовуємо cookies для покращення роботи сайту та аналізу
+        трафіку. Продовжуючи роботу, ви погоджуєтесь з нашою
+        <a href="/cookies/">Політикою Cookies</a>.
+      </p>
+      <div class="cookie-banner__btns">
+        <button class="cookie-accept" id="cookieAccept">Прийняти</button>
+        <button class="cookie-decline" id="cookieDecline">Відмовитись</button>
       </div>
     </div>
-  </section>
 
-  <!-- BLOG PREVIEW -->
-  <section class="section section-border">
-    <div class="section__head">
-      <div class="section__head-left">
-        <div class="section-eyebrow">Блог</div>
-        <h2 class="section__title">Корисне про маркетинг<br>та просування</h2>
-      </div>
-      <a href="/blog/" class="link-all">Всі статті →</a>
-    </div>
-    <div class="blog-grid">
-      <div class="blog-card blog-card--big anim-up">
-        <img class="blog-card__img"
-          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=85&fit=crop"
-          alt="SEO тренди 2025">
-        <div class="blog-card__body">
-          <div class="blog-card__cat">SEO</div>
-          <h3 class="blog-card__title">10 SEO-трендів 2025, які вже змінюють видачу Google</h3>
-          <p class="blog-card__excerpt">AI-generated content, E-E-A-T сигнали, Core Web Vitals нового покоління — що врахувати в стратегії просування вже зараз.</p>
-          <div class="blog-card__meta">15 травня 2025 · 8 хв читання</div>
-        </div>
-      </div>
-      <div class="blog-card anim-up anim-d1">
-        <img class="blog-card__img"
-          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=85&fit=crop"
-          alt="Контент-маркетинг для B2B">
-        <div class="blog-card__body">
-          <div class="blog-card__cat">Контент</div>
-          <h3 class="blog-card__title">Контент-маркетинг для B2B: стратегія, що дає ліди</h3>
-          <p class="blog-card__excerpt">Як перетворити корпоративний блог на машину генерації якісних заявок.</p>
-          <div class="blog-card__meta">8 травня 2025 · 6 хв</div>
-        </div>
-      </div>
-      <div class="blog-card anim-up anim-d2">
-        <img class="blog-card__img"
-          src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=85&fit=crop"
-          alt="SMM стратегія 2025">
-        <div class="blog-card__body">
-          <div class="blog-card__cat">SMM</div>
-          <h3 class="blog-card__title">SMM у 2025: алгоритми змінились — змінюйся і ти</h3>
-          <p class="blog-card__excerpt">Що працює в Instagram та TikTok після оновлень алгоритмів і як адаптувати контент-план.</p>
-          <div class="blog-card__meta">1 травня 2025 · 5 хв</div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <script>
+      // Burger menu
+      const burger = document.getElementById("burger");
+      const menu = document.getElementById("mobileMenu");
+      const close = document.getElementById("menuClose");
+      burger.addEventListener("click", () => menu.classList.toggle("open"));
+      close.addEventListener("click", () => menu.classList.remove("open"));
 
-  <!-- CTA BAND -->
-  <div class="cta-band">
-    <div class="cta-band__inner">
-      <div>
-        <h2 class="cta-band__title">Готові збільшити трафік та продажі вашого сайту?</h2>
-        <p class="cta-band__desc">Залиште заявку — проведемо безкоштовний аудит та запропонуємо стратегію просування протягом 24 годин.</p>
-      </div>
-      <a href="/contacts/" class="btn-white">Отримати безкоштовний аудит →</a>
-    </div>
-  </div>
+      // Scroll animations
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".anim-up, .anim-fade")
+        .forEach((el) => obs.observe(el));
 
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer__col">
-      <div class="footer__col-title">Послуги</div>
-      <ul>
-        <li><a href="/services/#seo">SEO-просування</a></li>
-        <li><a href="/services/#content">Контент-маркетинг</a></li>
-        <li><a href="/services/#google-ads">Google Ads</a></li>
-        <li><a href="/services/#smm">SMM та таргет</a></li>
-        <li><a href="/services/#email">Email-маркетинг</a></li>
-        <li><a href="/services/#links">Linkbuilding</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <div class="footer__col-title">Компанія</div>
-      <ul>
-        <li><a href="/cases/">Кейси</a></li>
-        <li><a href="/tariffs/">Тарифи</a></li>
-        <li><a href="/blog/">Блог</a></li>
-        <li><a href="/contacts/">Контакти</a></li>
-        <li><a href="/contacts/">Безкоштовний аудит</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <div class="footer__col-title">Документи</div>
-      <ul>
-        <li><a href="/privacy/">Конфіденційність</a></li>
-        <li><a href="/offer/">Публічна оферта</a></li>
-        <li><a href="/terms/">Умови використання</a></li>
-        <li><a href="/cookies/">Політика Cookies</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__brand">
-      <div class="footer__brand-logo">
-        <div class="footer__brand-mark">FG</div>
-        FunnelGrid
-      </div>
-      <p class="footer__brand-desc">Агентство з просування сайтів. SEO, контент-маркетинг, таргетована реклама, SMM та email-маркетинг. Реальні результати — прозора звітність.</p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span class="footer-bottom__copy">2026 © FunnelGrid. Всі права захищені.</span>
-  </div>
-</footer>
-
-<!-- COOKIE BANNER -->
-<div class="cookie-banner" id="cookieBanner">
-  <p>Ми використовуємо cookies для покращення роботи сайту та аналізу трафіку. Продовжуючи роботу, ви погоджуєтесь з нашою <a href="/cookies/">Політикою Cookies</a>.</p>
-  <div class="cookie-banner__btns">
-    <button class="cookie-accept" id="cookieAccept">Прийняти</button>
-    <button class="cookie-decline" id="cookieDecline">Відмовитись</button>
-  </div>
-</div>
-
-<script>
-  // Burger menu
-  const burger = document.getElementById('burger');
-  const menu = document.getElementById('mobileMenu');
-  const close = document.getElementById('menuClose');
-  burger.addEventListener('click', () => menu.classList.toggle('open'));
-  close.addEventListener('click', () => menu.classList.remove('open'));
-
-  // Scroll animations
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.anim-up, .anim-fade').forEach(el => obs.observe(el));
-
-  // Cookie banner
-  const banner = document.getElementById('cookieBanner');
-  if (!localStorage.getItem('FunnelGrid_cookies')) banner.classList.add('visible');
-  document.getElementById('cookieAccept').onclick = () => {
-    localStorage.setItem('FunnelGrid_cookies', '1');
-    banner.classList.remove('visible');
-  };
-  document.getElementById('cookieDecline').onclick = () => {
-    localStorage.setItem('FunnelGrid_cookies', '0');
-    banner.classList.remove('visible');
-  };
-</script>
-</body>
+      // Cookie banner
+      const banner = document.getElementById("cookieBanner");
+      if (!localStorage.getItem("FunnelGrid_cookies"))
+        banner.classList.add("visible");
+      document.getElementById("cookieAccept").onclick = () => {
+        localStorage.setItem("FunnelGrid_cookies", "1");
+        banner.classList.remove("visible");
+      };
+      document.getElementById("cookieDecline").onclick = () => {
+        localStorage.setItem("FunnelGrid_cookies", "0");
+        banner.classList.remove("visible");
+      };
+    </script>
+  </body>
 </html>
