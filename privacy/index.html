@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Політика конфіденційності — FunnelGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>.legal{max-width:760px;margin:0 auto;padding:80px 40px}.legal h1{font-size:36px;font-weight:800;margin-bottom:8px}.legal__date{font-size:13px;color:var(--gray2);margin-bottom:48px}.legal h2{font-size:18px;font-weight:700;margin:36px 0 12px}.legal p,.legal li{font-size:14px;color:var(--gray);line-height:1.8}.legal ul{margin:0 0 16px 20px}.legal ul li{margin-bottom:6px}</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="legal">
+  <h1>Політика конфіденційності</h1>
+  <p class="legal__date">Актуальна з 1 січня 2026 року</p>
+  <h2>1. Загальні положення</h2>
+  <p>FunnelGrid (далі — «ми», «агентство») поважає конфіденційність відвідувачів сайту funnelgrid.ua. Ця Політика пояснює, яку інформацію ми збираємо, як її використовуємо та захищаємо.</p>
+  <h2>2. Яку інформацію ми збираємо</h2>
+  <ul>
+    <li>Контактні дані (ім'я, email, телефон), які ви надаєте через форму зворотного зв'язку</li>
+    <li>Технічні дані відвідування (IP-адреса, тип браузера, сторінки, що переглядались) — через Google Analytics 4</li>
+    <li>Дані cookie-файлів для покращення роботи сайту</li>
+  </ul>
+  <h2>3. Як ми використовуємо інформацію</h2>
+  <ul>
+    <li>Для зв'язку з вами у відповідь на запит</li>
+    <li>Для покращення якості послуг та сайту</li>
+    <li>Для аналізу ефективності маркетингових активностей</li>
+  </ul>
+  <h2>4. Передача третім особам</h2>
+  <p>Ми не продаємо і не передаємо ваші персональні дані третім особам, за винятком сервісів аналітики (Google Analytics), які обробляють дані згідно з власними політиками конфіденційності.</p>
+  <h2>5. Захист даних</h2>
+  <p>Ми вживаємо організаційних та технічних заходів для захисту ваших персональних даних від несанкціонованого доступу, розголошення або знищення.</p>
+  <h2>6. Ваші права</h2>
+  <p>Ви маєте право запросити доступ до ваших персональних даних, вимагати їх виправлення або видалення. Для цього напишіть на hello@funnelgrid.ua.</p>
+  <h2>7. Контакти</h2>
+  <p>З питань конфіденційності: hello@funnelgrid.ua</p>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO</a></li><li><a href="/services/#content">Контент</a></li><li><a href="/services/#google-ads">Google Ads</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

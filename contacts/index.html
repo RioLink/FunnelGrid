@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти — FunnelGrid</title>
+  <meta name="description" content="Зв'яжіться з FunnelGrid для безкоштовного аудиту сайту та консультації щодо SEO і digital-маркетингу.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .contacts-hero{padding:80px 0 0;text-align:center}
+    .contacts-hero__label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}
+    .contacts-hero__title{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:16px}
+    .contacts-hero__sub{font-size:16px;color:var(--gray);max-width:520px;margin:0 auto 64px}
+    .contacts-split{max-width:1160px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-bottom:80px}
+    .contacts-form h2{font-size:22px;font-weight:800;margin-bottom:28px}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .form-group{margin-bottom:16px}
+    .form-group label{display:block;font-size:12px;font-weight:600;color:var(--gray2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.06em}
+    .form-group input,.form-group textarea,.form-group select{width:100%;background:var(--surface);border:1px solid var(--border);color:#fff;padding:14px 18px;font-size:14px;font-family:inherit;outline:none;box-sizing:border-box}
+    .form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--accent)}
+    .form-group textarea{resize:vertical;min-height:120px}
+    .form-group select option{background:var(--bg)}
+    .form-submit{background:var(--accent);color:#fff;border:none;padding:16px 40px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;width:100%;margin-top:8px}
+    .contacts-info h2{font-size:22px;font-weight:800;margin-bottom:28px}
+    .contact-strip{display:flex;flex-direction:column;gap:20px;margin-bottom:40px}
+    .contact-strip__item{display:flex;gap:16px;align-items:flex-start}
+    .contact-strip__icon{width:40px;height:40px;background:var(--red-bg);border:1px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+    .contact-strip__label{font-size:11px;color:var(--gray2);text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+    .contact-strip__val{font-size:15px;font-weight:600}
+    .contact-strip__val a{color:#fff;text-decoration:none}
+    .audit-box{background:var(--red-bg);border:1px solid var(--accent);padding:28px 32px}
+    .audit-box__title{font-size:16px;font-weight:800;margin-bottom:16px}
+    .audit-box__list{list-style:none}
+    .audit-box__list li{font-size:13px;color:var(--gray);padding:7px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:center}
+    .audit-box__list li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0}
+    @media(max-width:1100px){.contacts-split{padding:0 24px;gap:40px}}
+    @media(max-width:900px){.contacts-split{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/" class="active">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <section class="contacts-hero">
+    <div class="contacts-hero__label">Зв'язок</div>
+    <h1 class="contacts-hero__title">Розкажіть про свій проект</h1>
+    <p class="contacts-hero__sub">Відповімо протягом одного робочого дня і запропонуємо безкоштовний аудит</p>
+  </section>
+  <div class="contacts-split">
+    <div class="contacts-form">
+      <h2>Залишити заявку</h2>
+      <div class="form-row">
+        <div class="form-group"><label>Ім'я</label><input type="text" placeholder="Ваше ім'я"></div>
+        <div class="form-group"><label>Компанія</label><input type="text" placeholder="Назва компанії"></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="email@company.ua"></div>
+      <div class="form-group"><label>Телефон</label><input type="tel" placeholder="+38 (0__) ___ __ __"></div>
+      <div class="form-group">
+        <label>Що потрібно?</label>
+        <select>
+          <option value="" disabled selected>Оберіть послугу</option>
+          <option>SEO-просування</option>
+          <option>Контент-маркетинг</option>
+          <option>Google Ads</option>
+          <option>SMM та таргет</option>
+          <option>Email-маркетинг</option>
+          <option>Веб-аналітика</option>
+          <option>Комплексний маркетинг</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Коментар</label><textarea placeholder="Розкажіть про ваш проект, задачі та очікування..."></textarea></div>
+      <button class="form-submit" type="button">Надіслати заявку</button>
+    </div>
+    <div class="contacts-info">
+      <h2>Контактна інформація</h2>
+      <div class="contact-strip">
+        <div class="contact-strip__item">
+          <div class="contact-strip__icon">✉</div>
+          <div><div class="contact-strip__label">Email</div><div class="contact-strip__val"><a href="mailto:hello@funnelgrid.ua">hello@funnelgrid.ua</a></div></div>
+        </div>
+        <div class="contact-strip__item">
+          <div class="contact-strip__icon">☎</div>
+          <div><div class="contact-strip__label">Телефон</div><div class="contact-strip__val"><a href="tel:+380441234567">+38 (044) 123-45-67</a></div></div>
+        </div>
+        <div class="contact-strip__item">
+          <div class="contact-strip__icon">⏰</div>
+          <div><div class="contact-strip__label">Час роботи</div><div class="contact-strip__val">Пн–Пт, 9:00–18:00</div></div>
+        </div>
+        <div class="contact-strip__item">
+          <div class="contact-strip__icon">📍</div>
+          <div><div class="contact-strip__label">Офіс</div><div class="contact-strip__val">Київ, Україна</div></div>
+        </div>
+      </div>
+      <div class="audit-box">
+        <div class="audit-box__title">Що ви отримаєте на безкоштовному аудиті</div>
+        <ul class="audit-box__list">
+          <li>Аналіз технічного стану сайту</li>
+          <li>Оцінку видимості в пошуку за ключовими запитами</li>
+          <li>Аналіз конкурентів у вашій ніші</li>
+          <li>Рекомендації щодо точок росту</li>
+          <li>Орієнтовну стратегію просування</li>
+          <li>Відповіді на всі ваші запитання</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO-просування</a></li><li><a href="/services/#content">Контент-маркетинг</a></li><li><a href="/services/#google-ads">Google Ads</a></li><li><a href="/services/#smm">SMM та таргет</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/tariffs/">Тарифи</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

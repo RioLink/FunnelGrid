@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Умови використання — FunnelGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>.legal{max-width:760px;margin:0 auto;padding:80px 40px}.legal h1{font-size:36px;font-weight:800;margin-bottom:8px}.legal__date{font-size:13px;color:var(--gray2);margin-bottom:48px}.legal h2{font-size:18px;font-weight:700;margin:36px 0 12px}.legal p,.legal li{font-size:14px;color:var(--gray);line-height:1.8}.legal ul{margin:0 0 16px 20px}.legal ul li{margin-bottom:6px}</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="legal">
+  <h1>Умови використання</h1>
+  <p class="legal__date">Актуальні з 1 січня 2026 року</p>
+  <h2>1. Прийняття умов</h2>
+  <p>Використовуючи сайт funnelgrid.ua, ви погоджуєтесь з цими Умовами використання. Якщо ви не погоджуєтесь, будь ласка, припиніть використання сайту.</p>
+  <h2>2. Використання сайту</h2>
+  <ul>
+    <li>Сайт призначений для інформаційних цілей та отримання послуг FunnelGrid</li>
+    <li>Забороняється копіювати контент сайту без письмового дозволу</li>
+    <li>Забороняється використовувати сайт для розповсюдження спаму або шкідливих програм</li>
+  </ul>
+  <h2>3. Інтелектуальна власність</h2>
+  <p>Весь контент сайту (тексти, зображення, логотипи, дизайн) є власністю FunnelGrid або використовується на законних підставах. Будь-яке відтворення без дозволу заборонено.</p>
+  <h2>4. Обмеження відповідальності</h2>
+  <p>FunnelGrid не несе відповідальності за збитки, спричинені використанням або неможливістю використання сайту, а також за точність і повноту інформації на ньому.</p>
+  <h2>5. Зміни умов</h2>
+  <p>Ми залишаємо за собою право змінювати ці Умови без попереднього повідомлення. Актуальна версія завжди доступна на цій сторінці.</p>
+  <h2>6. Контакти</h2>
+  <p>hello@funnelgrid.ua</p>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO</a></li><li><a href="/services/#content">Контент</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/terms/">Умови</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

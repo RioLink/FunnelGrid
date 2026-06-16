@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://promo-lab.com.ua/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://promo-lab.com.ua/services/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://promo-lab.com.ua/cases/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://promo-lab.com.ua/tariffs/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://promo-lab.com.ua/blog/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://promo-lab.com.ua/contacts/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://promo-lab.com.ua/privacy/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promo-lab.com.ua/offer/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promo-lab.com.ua/terms/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promo-lab.com.ua/cookies/</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

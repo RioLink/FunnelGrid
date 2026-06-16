@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GA4 для маркетолога — FunnelGrid Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>.post-hero{max-width:860px;margin:0 auto;padding:64px 32px 48px}.post-hero__cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}.post-hero__title{font-size:clamp(32px,5vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-bottom:20px}.post-hero__meta{font-size:13px;color:var(--gray2);display:flex;gap:16px;padding-bottom:32px;border-bottom:1px solid var(--border)}.post-cover{max-width:860px;margin:0 auto;padding:0 32px}.post-cover img{width:100%;height:420px;object-fit:cover;display:block;filter:brightness(.75) saturate(.7)}.post-body{max-width:860px;margin:0 auto;padding:48px 32px 80px}.post-body h2{font-size:24px;font-weight:800;margin:40px 0 14px}.post-body p{font-size:15px;color:var(--gray);line-height:1.8;margin-bottom:16px}.post-body ul{margin:0 0 20px 20px}.post-body ul li{font-size:14px;color:var(--gray);line-height:1.7;margin-bottom:8px}.post-body ul li::marker{color:var(--accent)}.post-body .tip{background:var(--red-bg);border-left:3px solid var(--accent);padding:20px 24px;margin:28px 0;font-size:14px;color:var(--gray);line-height:1.7}.post-nav{max-width:860px;margin:0 auto;padding:32px 32px 80px;border-top:1px solid var(--border);display:flex;justify-content:space-between}.post-nav a{font-size:13px;font-weight:600;color:var(--accent)}</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/" class="active">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <div class="post-hero">
+    <div class="post-hero__cat">Аналітика</div>
+    <h1 class="post-hero__title">GA4 для маркетолога: налаштування, що насправді важливі</h1>
+    <div class="post-hero__meta"><span>14 квітня 2025</span><span>·</span><span>7 хвилин читання</span><span>·</span><span>Автор: FunnelGrid</span></div>
+  </div>
+  <div class="post-cover"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=85&fit=crop" alt="Google Analytics 4"></div>
+  <div class="post-body">
+    <p>Google Analytics 4 повністю замінив Universal Analytics. Багато маркетологів досі не адаптували свій підхід до роботи з даними. Розберемо ключові налаштування, без яких GA4 дає хибні висновки.</p>
+    <h2>1. Налаштування конверсій</h2>
+    <p>В GA4 конверсії — це «ключові події». На відміну від UA, тут немає автоматичних цілей. Вам потрібно вручну позначити важливі події як конверсії: заповнення форми, дзвінок, покупка, реєстрація.</p>
+    <div class="tip">Перш за все налаштуйте: form_submit, phone_click, purchase, sign_up. Без цього ви не побачите реальну картину конверсій.</div>
+    <h2>2. Фільтрація внутрішнього трафіку</h2>
+    <p>Якщо ви або ваші колеги часто заходять на сайт — додайте IP-адреси офісу в «Внутрішні фільтри». Без цього статистика буде забруднена.</p>
+    <h2>3. Налаштування каналів</h2>
+    <p>Стандартне групування каналів GA4 не завжди відповідає реальності. Налаштуйте власне групування, щоб відокремити органіку від платної реклами, email від push.</p>
+    <h2>4. Воронки розвідки</h2>
+    <p>Звіти «Воронка» в GA4 дозволяють відстежувати шлях користувача від першого візиту до конверсії. Налаштуйте воронку під ваш сайт — знайдете точки відтоку.</p>
+    <h2>5. Залученість замість показника відмов</h2>
+    <p>GA4 замінив показник відмов на «Engaged sessions». Норма залученості — 50–70% для більшості сайтів. Нижче — сигнал проблем з релевантністю трафіку.</p>
+    <div class="tip">Головне правило: GA4 — не самоціль. Налаштовуйте тільки ті звіти та події, на основі яких ви реально приймаєте рішення.</div>
+  </div>
+  <div class="post-nav"><a href="/blog/">← Повернутись до блогу</a><a href="/contacts/">Замовити аудит аналітики →</a></div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO</a></li><li><a href="/services/#google-ads">Google Ads</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

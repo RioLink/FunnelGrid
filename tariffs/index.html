@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тарифи — FunnelGrid</title>
+  <meta name="description" content="Прозорі тарифи на SEO, контент-маркетинг і Google Ads від агентства FunnelGrid. Старт від 9 900 грн/міс.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .tariffs-hero{padding:80px 0 64px;text-align:center}
+    .tariffs-hero__label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}
+    .tariffs-hero__title{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:16px}
+    .tariffs-hero__sub{font-size:16px;color:var(--gray);max-width:520px;margin:0 auto}
+    .tariffs-section{max-width:1160px;margin:0 auto;padding:0 40px 80px}
+    .plans{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:64px}
+    .plan{background:var(--surface);border:1px solid var(--border);padding:40px 36px}
+    .plan--featured{background:var(--red-bg);border-color:var(--accent);position:relative}
+    .plan--featured::before{content:'Популярний';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 14px}
+    .plan__name{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray2);margin-bottom:20px}
+    .plan__price{font-size:48px;font-weight:800;letter-spacing:-.04em;line-height:1}
+    .plan__price span{font-size:16px;font-weight:400;color:var(--gray2)}
+    .plan__desc{font-size:13px;color:var(--gray);margin:16px 0 28px;line-height:1.6}
+    .plan__list{list-style:none;margin-bottom:32px}
+    .plan__list li{font-size:13px;color:var(--gray);padding:9px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+    .plan__list li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0}
+    .plan__list li.disabled{color:var(--gray2)}
+    .plan__list li.disabled::before{content:'—';color:var(--gray2)}
+    .plan__cta{display:block;text-align:center;padding:14px;font-size:13px;font-weight:700;text-decoration:none;border:1px solid var(--accent);color:var(--accent)}
+    .plan--featured .plan__cta{background:var(--accent);color:#fff}
+    .compare-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray2);margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+    .compare-table{width:100%;border-collapse:collapse;margin-bottom:64px}
+    .compare-table th,.compare-table td{padding:14px 16px;border-bottom:1px solid var(--border);font-size:13px;text-align:left}
+    .compare-table th{color:var(--gray2);font-weight:600}
+    .compare-table th:nth-child(n+2){text-align:center}
+    .compare-table td:nth-child(n+2){text-align:center;color:var(--accent);font-weight:700}
+    .compare-table td:first-child{color:var(--gray)}
+    .compare-table .check{color:var(--accent)}
+    .compare-table .no{color:var(--gray2)}
+    .faq-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray2);margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-item__q{padding:20px 0;font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+    .faq-item__q::after{content:'+';font-size:20px;color:var(--accent);transition:transform .2s}
+    .faq-item.open .faq-item__q::after{transform:rotate(45deg)}
+    .faq-item__a{display:none;font-size:14px;color:var(--gray);line-height:1.75;padding-bottom:20px}
+    .faq-item.open .faq-item__a{display:block}
+    @media(max-width:1100px){.tariffs-section{padding:0 24px 80px}}
+    @media(max-width:900px){.plans{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/" class="active">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <section class="tariffs-hero">
+    <div class="tariffs-hero__label">Тарифи</div>
+    <h1 class="tariffs-hero__title">Прозорі ціни без сюрпризів</h1>
+    <p class="tariffs-hero__sub">Обираєте пакет — розуміємо, що входить і чого очікувати в результаті</p>
+  </section>
+  <div class="tariffs-section">
+    <div class="plans">
+      <div class="plan">
+        <div class="plan__name">Старт</div>
+        <div class="plan__price">9 900 <span>грн/міс</span></div>
+        <p class="plan__desc">Для малого бізнесу, що починає системно займатись SEO і контентом</p>
+        <ul class="plan__list">
+          <li>SEO-аудит та технічна оптимізація</li>
+          <li>Семантичне ядро до 200 запитів</li>
+          <li>4 SEO-статті на місяць</li>
+          <li>Оптимізація метатегів</li>
+          <li>Щомісячний звіт</li>
+          <li class="disabled">Linkbuilding</li>
+          <li class="disabled">Google Ads</li>
+          <li class="disabled">Персональний менеджер</li>
+        </ul>
+        <a href="/contacts/" class="plan__cta">Обрати тариф</a>
+      </div>
+      <div class="plan plan--featured">
+        <div class="plan__name">Бізнес</div>
+        <div class="plan__price">19 900 <span>грн/міс</span></div>
+        <p class="plan__desc">Комплексне SEO + контент для компаній, що хочуть стабільного росту органіки</p>
+        <ul class="plan__list">
+          <li>Повний SEO-аудит і стратегія</li>
+          <li>Семантичне ядро до 1000 запитів</li>
+          <li>8 SEO-статей на місяць</li>
+          <li>Технічна підтримка сайту</li>
+          <li>Linkbuilding: 8 посилань/міс</li>
+          <li>Google Search Console аналітика</li>
+          <li>Двотижневий звіт</li>
+          <li>Персональний менеджер</li>
+        </ul>
+        <a href="/contacts/" class="plan__cta">Обрати тариф</a>
+      </div>
+      <div class="plan">
+        <div class="plan__name">Преміум</div>
+        <div class="plan__price">39 900 <span>грн/міс</span></div>
+        <p class="plan__desc">Повний digital-маркетинг для бізнесу з серйозними амбіціями росту</p>
+        <ul class="plan__list">
+          <li>Все з тарифу «Бізнес»</li>
+          <li>Google Ads (до 50 000 грн бюджету)</li>
+          <li>12 SEO-статей на місяць</li>
+          <li>Linkbuilding: 20 посилань/міс</li>
+          <li>SMM: 3 пости на тиждень</li>
+          <li>GA4 + GTM налаштування</li>
+          <li>Щотижневий звіт</li>
+          <li>Виділений менеджер проекту</li>
+        </ul>
+        <a href="/contacts/" class="plan__cta">Обрати тариф</a>
+      </div>
+    </div>
+    <div class="compare-title">Детальне порівняння тарифів</div>
+    <table class="compare-table">
+      <thead><tr><th>Функція</th><th>Старт</th><th>Бізнес</th><th>Преміум</th></tr></thead>
+      <tbody>
+        <tr><td>SEO-аудит</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Семантичне ядро</td><td>до 200</td><td>до 1000</td><td>Безліміт</td></tr>
+        <tr><td>Статей на місяць</td><td>4</td><td>8</td><td>12</td></tr>
+        <tr><td>Linkbuilding</td><td class="no">—</td><td>8/міс</td><td>20/міс</td></tr>
+        <tr><td>Google Ads</td><td class="no">—</td><td class="no">—</td><td class="check">✓</td></tr>
+        <tr><td>SMM</td><td class="no">—</td><td class="no">—</td><td class="check">✓</td></tr>
+        <tr><td>GA4 налаштування</td><td class="no">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Персональний менеджер</td><td class="no">—</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Частота звітів</td><td>Місячна</td><td>2/місяць</td><td>Щотижнева</td></tr>
+      </tbody>
+    </table>
+    <div class="faq-title">Часті запитання</div>
+    <div class="faq-item">
+      <div class="faq-item__q">Чи є мінімальний строк співпраці?</div>
+      <div class="faq-item__a">Мінімальний строк — 3 місяці. SEO дає відчутні результати після 2–4 місяців системної роботи. Разові послуги (аудит, налаштування GA4) виконуємо без обмежень.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-item__q">Що входить у linkbuilding?</div>
+      <div class="faq-item__a">Ми розміщуємо посилання на тематичних ресурсах з DR 30+. Перед розміщенням кожен донор погоджується з клієнтом. Всі розміщення постійні, без абонплати донорам.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-item__q">Як відбувається звітність?</div>
+      <div class="faq-item__a">Щомісяця надаємо структурований звіт: динаміка позицій, органічний трафік, виконані роботи, план на наступний місяць. У тарифах Бізнес і Преміум — проміжні звіти та доступ до живого дашборду.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-item__q">Чи можна скомбінувати послуги з різних тарифів?</div>
+      <div class="faq-item__a">Так. Ми формуємо індивідуальні пропозиції під конкретні задачі бізнесу. Напишіть нам — обговоримо ваш проект і запропонуємо оптимальний набір послуг з чіткою ціною.</div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO-просування</a></li><li><a href="/services/#content">Контент-маркетинг</a></li><li><a href="/services/#google-ads">Google Ads</a></li><li><a href="/services/#smm">SMM та таргет</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/tariffs/">Тарифи</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+  document.querySelectorAll('.faq-item__q').forEach(q=>{
+    q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
+  });
+</script>
+</body>
+</html>

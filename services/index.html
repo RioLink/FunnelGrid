@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Послуги — FunnelGrid</title>
+  <meta name="description" content="SEO-просування, контент-маркетинг, Google Ads, SMM, email-маркетинг та веб-аналітика від агентства FunnelGrid.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .services-hero{padding:80px 0 64px;text-align:center}
+    .services-hero__label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}
+    .services-hero__title{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:16px}
+    .services-hero__sub{font-size:16px;color:var(--gray);max-width:520px;margin:0 auto}
+    .services-list{max-width:1160px;margin:0 auto;padding:0 40px 80px}
+    .service-item{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);margin-bottom:2px}
+    .service-item:nth-child(even) .service-item__img{order:2}
+    .service-item:nth-child(even) .service-item__body{order:1}
+    .service-item__img img{width:100%;height:380px;object-fit:cover;display:block;filter:brightness(.6) saturate(.6)}
+    .service-item__body{padding:48px 56px;display:flex;flex-direction:column;justify-content:center}
+    .service-item__icon{font-size:32px;margin-bottom:20px}
+    .service-item__tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:12px}
+    .service-item__title{font-size:28px;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+    .service-item__text{font-size:14px;color:var(--gray);line-height:1.75;margin-bottom:24px}
+    .service-item__list{list-style:none;margin-bottom:28px}
+    .service-item__list li{font-size:13px;color:var(--gray2);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+    .service-item__list li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0}
+    .service-item__cta{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-size:13px;font-weight:700;text-decoration:none}
+    .services-cta{background:var(--red-bg);border:1px solid var(--accent);padding:64px;text-align:center;margin-top:48px}
+    .services-cta h2{font-size:32px;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+    .services-cta p{font-size:15px;color:var(--gray);margin-bottom:28px}
+    .services-cta a{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:16px 40px;text-decoration:none}
+    @media(max-width:1100px){.services-list{padding:0 24px 80px}}
+    @media(max-width:900px){.service-item{grid-template-columns:1fr}.service-item:nth-child(even) .service-item__img{order:0}.service-item:nth-child(even) .service-item__body{order:0}.service-item__body{padding:32px 28px}.services-cta{padding:40px 24px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/" class="active">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <section class="services-hero">
+    <div class="services-hero__label">Наші послуги</div>
+    <h1 class="services-hero__title">Просування, яке дає результат</h1>
+    <p class="services-hero__sub">Комплексний digital-маркетинг для бізнесу, що хоче рости в пошуку та соцмережах</p>
+  </section>
+  <div class="services-list">
+    <div class="service-item" id="seo">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=80&fit=crop" alt="SEO просування"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">SEO</div>
+        <h2 class="service-item__title">SEO-просування сайтів</h2>
+        <p class="service-item__text">Виводимо сайти у ТОП Google за комерційними запитами. Технічна оптимізація, контент-стратегія, нарощування посилань — системна робота, а не разові дії.</p>
+        <ul class="service-item__list">
+          <li>Технічний SEO-аудит і виправлення</li>
+          <li>Семантичне ядро та структура сайту</li>
+          <li>Оптимізація метатегів і контенту</li>
+          <li>Крауд-маркетинг і linkbuilding</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Замовити SEO →</a>
+      </div>
+    </div>
+    <div class="service-item" id="content">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80&fit=crop" alt="Контент-маркетинг"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">Контент-маркетинг</div>
+        <h2 class="service-item__title">Контент-маркетинг</h2>
+        <p class="service-item__text">Створюємо контент, що залучає органічний трафік і конвертує читачів у клієнтів. Від стратегії до публікації — повний цикл виробництва контенту.</p>
+        <ul class="service-item__list">
+          <li>Контент-стратегія та редполітика</li>
+          <li>SEO-статті та лонгріди для блогу</li>
+          <li>Лендінги та посадкові сторінки</li>
+          <li>Контент-аудит та переоптимізація</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Замовити контент →</a>
+      </div>
+    </div>
+    <div class="service-item" id="google-ads">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80&fit=crop" alt="Google Ads"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">Google Ads</div>
+        <h2 class="service-item__title">Google Ads та PPC</h2>
+        <p class="service-item__text">Контекстна реклама з прозорою аналітикою і оплатою за результат. Налаштовуємо, оптимізуємо і масштабуємо кампанії, що приносять ліди.</p>
+        <ul class="service-item__list">
+          <li>Пошукові кампанії та Performance Max</li>
+          <li>Ремаркетинг та медійна реклама</li>
+          <li>Оптимізація конверсій і CPA</li>
+          <li>Щомісячна аналітика та звітність</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Запустити рекламу →</a>
+      </div>
+    </div>
+    <div class="service-item" id="smm">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=80&fit=crop" alt="SMM та таргет"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">SMM</div>
+        <h2 class="service-item__title">SMM та таргетована реклама</h2>
+        <p class="service-item__text">Ведення соцмереж і таргетована реклама в Instagram, Facebook та TikTok. Будуємо комʼюніті навколо бренду і залучаємо цільову аудиторію.</p>
+        <ul class="service-item__list">
+          <li>Стратегія присутності в соцмережах</li>
+          <li>Виробництво контенту: фото, Reels, Stories</li>
+          <li>Таргетована реклама Meta Ads</li>
+          <li>Робота з лідерами думок (UGC)</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Розвинути соцмережі →</a>
+      </div>
+    </div>
+    <div class="service-item" id="email">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&q=80&fit=crop" alt="Email-маркетинг"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">Email-маркетинг</div>
+        <h2 class="service-item__title">Email-маркетинг</h2>
+        <p class="service-item__text">Автоматизовані ланцюжки листів, що працюють 24/7. Від welcome-серій до складних CRM-автоматизацій — будуємо email-канал, що регулярно генерує продажі.</p>
+        <ul class="service-item__list">
+          <li>Welcome та onboarding серії</li>
+          <li>Тригерні листи та автоматизації</li>
+          <li>Масові розсилки та дайджести</li>
+          <li>A/B тестування та оптимізація</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Налаштувати email →</a>
+      </div>
+    </div>
+    <div class="service-item" id="analytics">
+      <div class="service-item__img"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop" alt="Веб-аналітика"></div>
+      <div class="service-item__body">
+        <div class="service-item__tag">Аналітика</div>
+        <h2 class="service-item__title">Веб-аналітика та аудити</h2>
+        <p class="service-item__text">Налаштовуємо GA4, GTM та наскрізну аналітику, щоб ви точно знали, звідки приходять клієнти і які канали окупаються. Дані замість здогадок.</p>
+        <ul class="service-item__list">
+          <li>Налаштування GA4 та Google Tag Manager</li>
+          <li>Наскрізна аналітика та CRM-інтеграція</li>
+          <li>Дашборди та регулярна звітність</li>
+          <li>SEO та маркетингові аудити</li>
+        </ul>
+        <a href="/contacts/" class="service-item__cta">Замовити аудит →</a>
+      </div>
+    </div>
+    <div class="services-cta">
+      <h2>Не знаєте, з чого почати?</h2>
+      <p>Залиште заявку — проведемо безкоштовний аудит і запропонуємо оптимальний набір послуг для вашого бізнесу.</p>
+      <a href="/contacts/">Отримати безкоштовний аудит</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO-просування</a></li><li><a href="/services/#content">Контент-маркетинг</a></li><li><a href="/services/#google-ads">Google Ads</a></li><li><a href="/services/#smm">SMM та таргет</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/tariffs/">Тарифи</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

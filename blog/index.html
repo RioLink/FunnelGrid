@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — FunnelGrid</title>
+  <meta name="description" content="Корисні статті про SEO, контент-маркетинг, Google Ads, SMM та email-маркетинг від команди FunnelGrid.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .blog-hero{padding:80px 0 56px;text-align:center}
+    .blog-hero__label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}
+    .blog-hero__title{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:16px}
+    .blog-hero__sub{font-size:16px;color:var(--gray);max-width:480px;margin:0 auto}
+    .blog-section{max-width:1160px;margin:0 auto;padding:0 40px 80px}
+    .blog-featured{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:56px}
+    .blog-card-featured{display:block;text-decoration:none;position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--border)}
+    .blog-card-featured img{width:100%;height:300px;object-fit:cover;display:block;filter:brightness(.65) saturate(.6);transition:transform .5s ease,filter .5s ease}
+    .blog-card-featured:hover img{transform:scale(1.04);filter:brightness(.75) saturate(.7)}
+    .blog-card-featured__body{position:absolute;bottom:0;left:0;right:0;padding:28px 32px;background:linear-gradient(to top,rgba(15,12,10,.95) 60%,transparent)}
+    .blog-card-featured__cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px}
+    .blog-card-featured__title{font-size:20px;font-weight:800;letter-spacing:-.02em;line-height:1.2;margin-bottom:8px}
+    .blog-card-featured__meta{font-size:12px;color:var(--gray2)}
+    .blog-grid-title{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray2);margin-bottom:24px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .blog-card{background:var(--surface);border:1px solid var(--border);display:flex;flex-direction:column;text-decoration:none;transition:border-color .2s}
+    .blog-card:hover{border-color:var(--accent)}
+    .blog-card img{width:100%;height:180px;object-fit:cover;display:block;filter:brightness(.7) saturate(.6)}
+    .blog-card__body{padding:20px 24px 24px;display:flex;flex-direction:column;flex:1}
+    .blog-card__cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:8px}
+    .blog-card__title{font-size:16px;font-weight:700;letter-spacing:-.01em;line-height:1.35;margin-bottom:auto}
+    .blog-card__meta{font-size:12px;color:var(--gray2);margin-top:16px}
+    .blog-newsletter{background:var(--red-bg);border:1px solid var(--accent);padding:48px;margin-top:56px;display:flex;align-items:center;gap:48px}
+    .blog-newsletter__text h3{font-size:24px;font-weight:800;margin-bottom:8px}
+    .blog-newsletter__text p{font-size:14px;color:var(--gray)}
+    .blog-newsletter__form{display:flex;gap:12px;flex:1;min-width:320px}
+    .blog-newsletter__form input{flex:1;background:var(--bg);border:1px solid var(--border);color:#fff;padding:14px 20px;font-size:14px;outline:none}
+    .blog-newsletter__form input:focus{border-color:var(--accent)}
+    .blog-newsletter__form button{background:var(--accent);color:#fff;border:none;padding:14px 28px;font-size:13px;font-weight:700;cursor:pointer;white-space:nowrap}
+    @media(max-width:1100px){.blog-section{padding:0 24px 80px}}
+    @media(max-width:900px){.blog-featured{grid-template-columns:1fr}.blog-grid{grid-template-columns:1fr 1fr}.blog-newsletter{flex-direction:column;gap:24px}}
+    @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.blog-newsletter__form{flex-direction:column}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/" class="active">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <section class="blog-hero">
+    <div class="blog-hero__label">Блог FunnelGrid</div>
+    <h1 class="blog-hero__title">Знання, що приносять трафік</h1>
+    <p class="blog-hero__sub">SEO, контент, реклама та аналітика — без води, тільки практика</p>
+  </section>
+  <div class="blog-section">
+    <div class="blog-featured">
+      <a class="blog-card-featured" href="/blog/seo-trendy-2025/">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&q=80&fit=crop" alt="SEO тренди 2025">
+        <div class="blog-card-featured__body">
+          <div class="blog-card-featured__cat">SEO</div>
+          <div class="blog-card-featured__title">10 SEO-трендів 2025, які вже змінюють видачу Google</div>
+          <div class="blog-card-featured__meta">15 травня 2025 · 8 хв</div>
+        </div>
+      </a>
+      <a class="blog-card-featured" href="/blog/content-marketing-b2b/">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&fit=crop" alt="Контент-маркетинг B2B">
+        <div class="blog-card-featured__body">
+          <div class="blog-card-featured__cat">Контент-маркетинг</div>
+          <div class="blog-card-featured__title">Контент-маркетинг для B2B: стратегія, що дає ліди</div>
+          <div class="blog-card-featured__meta">8 травня 2025 · 6 хв</div>
+        </div>
+      </a>
+    </div>
+    <div class="blog-grid-title">Всі статті</div>
+    <div class="blog-grid">
+      <a class="blog-card" href="/blog/smm-2025/">
+        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&q=80&fit=crop" alt="SMM 2025">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">SMM</div>
+          <div class="blog-card__title">SMM у 2025: алгоритми змінились — змінюйся і ти</div>
+          <div class="blog-card__meta">1 травня 2025 · 5 хв</div>
+        </div>
+      </a>
+      <a class="blog-card" href="/blog/welcome-seria/">
+        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600&q=80&fit=crop" alt="Welcome серія">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">Email-маркетинг</div>
+          <div class="blog-card__title">Welcome-серія листів: як перетворити підписника в покупця</div>
+          <div class="blog-card__meta">22 квітня 2025 · 6 хв</div>
+        </div>
+      </a>
+      <a class="blog-card" href="/blog/ga4/">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80&fit=crop" alt="GA4">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">Аналітика</div>
+          <div class="blog-card__title">GA4 для маркетолога: налаштування, що насправді важливі</div>
+          <div class="blog-card__meta">14 квітня 2025 · 7 хв</div>
+        </div>
+      </a>
+      <a class="blog-card" href="/blog/linkbuilding-2025/">
+        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&q=80&fit=crop" alt="Linkbuilding">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">SEO</div>
+          <div class="blog-card__title">Linkbuilding у 2025: які посилання ще працюють, а які шкодять</div>
+          <div class="blog-card__meta">5 квітня 2025 · 6 хв</div>
+        </div>
+      </a>
+      <a class="blog-card" href="/blog/performance-max/">
+        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&q=80&fit=crop" alt="Performance Max">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">Google Ads</div>
+          <div class="blog-card__title">Performance Max 2025: як налаштувати кампанії, що приносять ліди</div>
+          <div class="blog-card__meta">28 березня 2025 · 6 хв</div>
+        </div>
+      </a>
+      <a class="blog-card" href="/blog/content-audit/">
+        <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?w=600&q=80&fit=crop" alt="Контент аудит">
+        <div class="blog-card__body">
+          <div class="blog-card__cat">Контент-маркетинг</div>
+          <div class="blog-card__title">Контент-аудит: як зробити і що робити з результатами</div>
+          <div class="blog-card__meta">18 березня 2025 · 5 хв</div>
+        </div>
+      </a>
+    </div>
+    <div class="blog-newsletter">
+      <div class="blog-newsletter__text">
+        <h3>Підпишіться на розсилку FunnelGrid</h3>
+        <p>Раз на тиждень — дайджест корисних матеріалів про digital-маркетинг. Без спаму.</p>
+      </div>
+      <div class="blog-newsletter__form">
+        <input type="email" placeholder="Ваш email">
+        <button type="button">Підписатись</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO-просування</a></li><li><a href="/services/#content">Контент-маркетинг</a></li><li><a href="/services/#google-ads">Google Ads</a></li><li><a href="/services/#smm">SMM та таргет</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/tariffs/">Тарифи</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

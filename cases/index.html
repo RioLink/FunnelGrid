@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейси — FunnelGrid</title>
+  <meta name="description" content="Реальні результати клієнтів FunnelGrid: зростання органічного трафіку, зниження CPA та збільшення конверсій.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .cases-hero{padding:80px 0 64px;text-align:center}
+    .cases-hero__label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:16px}
+    .cases-hero__title{font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-.04em;line-height:1.05;margin-bottom:16px}
+    .cases-hero__sub{font-size:16px;color:var(--gray);max-width:520px;margin:0 auto}
+    .cases-list{max-width:1160px;margin:0 auto;padding:0 40px 80px}
+    .case-item{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border);margin-bottom:2px}
+    .case-item:nth-child(even) .case-item__img{order:2}
+    .case-item:nth-child(even) .case-item__body{order:1}
+    .case-item__img img{width:100%;height:360px;object-fit:cover;display:block;filter:brightness(.55) saturate(.5)}
+    .case-item__body{padding:48px 56px;display:flex;flex-direction:column;justify-content:center}
+    .case-item__tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:12px}
+    .case-item__client{font-size:13px;color:var(--gray2);margin-bottom:6px}
+    .case-item__title{font-size:26px;font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+    .case-item__text{font-size:14px;color:var(--gray);line-height:1.75;margin-bottom:28px}
+    .case-item__stats{display:flex;gap:32px;margin-bottom:28px}
+    .case-stat__val{font-size:36px;font-weight:800;letter-spacing:-.03em;color:var(--accent)}
+    .case-stat__label{font-size:11px;color:var(--gray2);margin-top:2px}
+    .case-item__tags{display:flex;gap:8px;flex-wrap:wrap}
+    .case-item__tags span{font-size:11px;font-weight:600;background:var(--red-bg);color:var(--accent);padding:4px 10px;border:1px solid var(--accent)}
+    .cases-cta{background:var(--red-bg);border:1px solid var(--accent);padding:64px;text-align:center;margin-top:48px}
+    .cases-cta h2{font-size:32px;font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+    .cases-cta p{font-size:15px;color:var(--gray);margin-bottom:28px}
+    .cases-cta a{display:inline-block;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:16px 40px;text-decoration:none}
+    @media(max-width:1100px){.cases-list{padding:0 24px 80px}}
+    @media(max-width:900px){.case-item{grid-template-columns:1fr}.case-item:nth-child(even) .case-item__img,.case-item:nth-child(even) .case-item__body{order:0}.case-item__body{padding:32px 28px}.cases-cta{padding:40px 24px}}
+  </style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/" class="active">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="page">
+  <section class="cases-hero">
+    <div class="cases-hero__label">Кейси клієнтів</div>
+    <h1 class="cases-hero__title">Цифри, що говорять самі</h1>
+    <p class="cases-hero__sub">Реальні результати наших клієнтів — без прикрас і округлень</p>
+  </section>
+  <div class="cases-list">
+    <div class="case-item">
+      <div class="case-item__img"><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80&fit=crop" alt="DigitroUA"></div>
+      <div class="case-item__body">
+        <div class="case-item__tag">SEO + Контент</div>
+        <div class="case-item__client">Клієнт: DigitroUA</div>
+        <h2 class="case-item__title">Зростання органічного трафіку на 340% за 8 місяців</h2>
+        <p class="case-item__text">B2B-компанія з продажу цифрового обладнання. Сайт не ранжувався за комерційними запитами через слабку технічну базу і відсутність контент-стратегії. Провели повний SEO-аудит, переструктурували сайт і запустили щомісячне виробництво SEO-статей.</p>
+        <div class="case-item__stats">
+          <div><div class="case-stat__val">+340%</div><div class="case-stat__label">Органічний трафік</div></div>
+          <div><div class="case-stat__val">87</div><div class="case-stat__label">Запитів у ТОП-10</div></div>
+          <div><div class="case-stat__val">×4.2</div><div class="case-stat__label">Ліди з органіки</div></div>
+        </div>
+        <div class="case-item__tags"><span>SEO</span><span>Контент</span><span>Linkbuilding</span></div>
+      </div>
+    </div>
+    <div class="case-item">
+      <div class="case-item__img"><img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80&fit=crop" alt="LearnPoint"></div>
+      <div class="case-item__body">
+        <div class="case-item__tag">Google Ads</div>
+        <div class="case-item__client">Клієнт: LearnPoint</div>
+        <h2 class="case-item__title">Зниження CPA на 58% та масштабування бюджету ×3</h2>
+        <p class="case-item__text">EdTech-платформа онлайн-курсів. Попередній підрядник витрачав бюджет без чіткої структури кампаній. Реструктурували акаунт, налаштували Performance Max із сигналами аудиторії та впровадили наскрізну аналітику.</p>
+        <div class="case-item__stats">
+          <div><div class="case-stat__val">−58%</div><div class="case-stat__label">Вартість ліда</div></div>
+          <div><div class="case-stat__val">×3</div><div class="case-stat__label">Масштаб бюджету</div></div>
+          <div><div class="case-stat__val">12%</div><div class="case-stat__label">Конверсія форми</div></div>
+        </div>
+        <div class="case-item__tags"><span>Google Ads</span><span>Performance Max</span><span>GA4</span></div>
+      </div>
+    </div>
+    <div class="case-item">
+      <div class="case-item__img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&fit=crop" alt="ActiveZone"></div>
+      <div class="case-item__body">
+        <div class="case-item__tag">SMM + Таргет</div>
+        <div class="case-item__client">Клієнт: ActiveZone</div>
+        <h2 class="case-item__title">Охоплення ×6 та 2 800 нових підписників за квартал</h2>
+        <p class="case-item__text">Мережа фітнес-клубів. Instagram-сторінка існувала формально — нерегулярні публікації без стратегії. Розробили контент-план, запустили Reels-виробництво і таргетовану рекламу на локальну аудиторію.</p>
+        <div class="case-item__stats">
+          <div><div class="case-stat__val">×6</div><div class="case-stat__label">Охоплення сторінки</div></div>
+          <div><div class="case-stat__val">2800</div><div class="case-stat__label">Нових підписників</div></div>
+          <div><div class="case-stat__val">340</div><div class="case-stat__label">Лідів з реклами</div></div>
+        </div>
+        <div class="case-item__tags"><span>SMM</span><span>Meta Ads</span><span>Reels</span></div>
+      </div>
+    </div>
+    <div class="case-item">
+      <div class="case-item__img"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80&fit=crop" alt="JurikaUA"></div>
+      <div class="case-item__body">
+        <div class="case-item__tag">SEO + Linkbuilding</div>
+        <div class="case-item__client">Клієнт: JurikaUA</div>
+        <h2 class="case-item__title">Вихід у ТОП-3 за 47 комерційними запитами за 6 місяців</h2>
+        <p class="case-item__text">Юридична фірма з вузькою спеціалізацією. Конкурентна ніша з високою вартістю кліку в рекламі. Зробили ставку на SEO: технічна оптимізація, авторський контент від юристів та якісний linkbuilding на тематичних ресурсах.</p>
+        <div class="case-item__stats">
+          <div><div class="case-stat__val">47</div><div class="case-stat__label">Запитів у ТОП-3</div></div>
+          <div><div class="case-stat__val">+220%</div><div class="case-stat__label">Органічний трафік</div></div>
+          <div><div class="case-stat__val">×3.5</div><div class="case-stat__label">Ліди з сайту</div></div>
+        </div>
+        <div class="case-item__tags"><span>SEO</span><span>E-E-A-T контент</span><span>Linkbuilding</span></div>
+      </div>
+    </div>
+    <div class="case-item">
+      <div class="case-item__img"><img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&fit=crop" alt="HealthPoint"></div>
+      <div class="case-item__body">
+        <div class="case-item__tag">Комплексний маркетинг</div>
+        <div class="case-item__client">Клієнт: HealthPoint</div>
+        <h2 class="case-item__title">Онлайн-запис +180% після запуску комплексної стратегії</h2>
+        <p class="case-item__text">Мережа медичних клінік. Потрібно було збільшити кількість онлайн-записів. Запустили SEO, Google Ads і email-автоматизацію паралельно. Налаштували наскрізну аналітику для відстеження вартості запису по кожному каналу.</p>
+        <div class="case-item__stats">
+          <div><div class="case-stat__val">+180%</div><div class="case-stat__label">Онлайн-записи</div></div>
+          <div><div class="case-stat__val">−41%</div><div class="case-stat__label">Вартість запису</div></div>
+          <div><div class="case-stat__val">3</div><div class="case-stat__label">Канали залучення</div></div>
+        </div>
+        <div class="case-item__tags"><span>SEO</span><span>Google Ads</span><span>Email</span><span>GA4</span></div>
+      </div>
+    </div>
+    <div class="cases-cta">
+      <h2>Ваш бізнес — наступний кейс</h2>
+      <p>Розкажіть про свій проект — запропонуємо стратегію і прорахуємо реалістичні результати.</p>
+      <a href="/contacts/">Обговорити проект</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO-просування</a></li><li><a href="/services/#content">Контент-маркетинг</a></li><li><a href="/services/#google-ads">Google Ads</a></li><li><a href="/services/#smm">SMM та таргет</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/tariffs/">Тарифи</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>

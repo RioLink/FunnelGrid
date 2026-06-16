@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Публічна оферта — FunnelGrid</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>.legal{max-width:760px;margin:0 auto;padding:80px 40px}.legal h1{font-size:36px;font-weight:800;margin-bottom:8px}.legal__date{font-size:13px;color:var(--gray2);margin-bottom:48px}.legal h2{font-size:18px;font-weight:700;margin:36px 0 12px}.legal p,.legal li{font-size:14px;color:var(--gray);line-height:1.8}.legal ul{margin:0 0 16px 20px}.legal ul li{margin-bottom:6px}</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner">
+    <nav class="nav"><a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a></nav>
+    <a href="/" class="logo"><div class="logo__mark">FG</div>FunnelGrid</a>
+    <a href="/contacts/" class="btn-audit">Безкоштовний аудит</a>
+    <div class="burger" id="burger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu__close" id="menuClose">✕</button>
+  <a href="/services/">Послуги</a><a href="/cases/">Кейси</a><a href="/tariffs/">Тарифи</a><a href="/blog/">Блог</a><a href="/contacts/">Контакти</a>
+  <a href="/contacts/" class="mobile-audit">Безкоштовний аудит</a>
+</div>
+<div class="legal">
+  <h1>Публічна оферта</h1>
+  <p class="legal__date">Актуальна з 1 січня 2026 року</p>
+  <h2>1. Предмет договору</h2>
+  <p>FunnelGrid (далі — «Виконавець») надає послуги digital-маркетингу: SEO-просування, контент-маркетинг, налаштування контекстної реклами, SMM, email-маркетинг та веб-аналітику. Прийняття умов оферти відбувається шляхом подачі заявки або підписання договору.</p>
+  <h2>2. Умови надання послуг</h2>
+  <ul>
+    <li>Послуги надаються на умовах щомісячної абонентської плати</li>
+    <li>Мінімальний строк для SEO-пакетів — 3 місяці</li>
+    <li>Перший платіж здійснюється до початку робіт</li>
+    <li>Наступні платежі — до 5-го числа кожного місяця</li>
+  </ul>
+  <h2>3. Права та обов'язки сторін</h2>
+  <p>Виконавець зобов'язується виконувати роботи в обсязі та строках, погоджених у технічному завданні. Замовник зобов'язується надавати необхідні доступи та своєчасно вносити оплату.</p>
+  <h2>4. Гарантії та результати</h2>
+  <p>Виконавець не гарантує конкретних позицій у пошуку, оскільки алгоритми Google постійно змінюються. Ми гарантуємо якісне виконання погодженого обсягу робіт та прозору звітність.</p>
+  <h2>5. Розірвання договору</h2>
+  <p>Кожна зі сторін може розірвати договір з попередженням за 30 днів. При достроковому розірванні з ініціативи замовника — повернення коштів за невикористаний залишок місяця.</p>
+  <h2>6. Контакти</h2>
+  <p>hello@funnelgrid.ua | +38 (044) 123-45-67</p>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="footer__col"><div class="footer__col-title">Послуги</div><ul><li><a href="/services/#seo">SEO</a></li><li><a href="/services/#content">Контент</a></li><li><a href="/services/#google-ads">Google Ads</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Компанія</div><ul><li><a href="/cases/">Кейси</a></li><li><a href="/blog/">Блог</a></li><li><a href="/contacts/">Контакти</a></li></ul></div>
+    <div class="footer__col"><div class="footer__col-title">Документи</div><ul><li><a href="/privacy/">Конфіденційність</a></li><li><a href="/offer/">Оферта</a></li><li><a href="/cookies/">Cookies</a></li></ul></div>
+    <div class="footer__brand"><div class="footer__brand-logo"><div class="footer__brand-mark">FG</div>FunnelGrid</div><p class="footer__brand-desc">Агентство з просування сайтів.</p></div>
+  </div>
+  <div class="footer-bottom"><span class="footer-bottom__copy">2026 © FunnelGrid</span></div>
+</footer>
+<script>
+  document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
+  document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+</script>
+</body>
+</html>
