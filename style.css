@@ -97,8 +97,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 36px;
-  margin-right: auto;
   padding-left: 40px;
+  flex: 1;
 }
 
 .nav a {
@@ -133,6 +133,7 @@ ul { list-style: none; }
   white-space: nowrap;
   transition: background 0.2s;
   flex-shrink: 0;
+  display: block;
 }
 
 .btn-audit:hover { background: var(--accent2); }
@@ -234,10 +235,18 @@ ul { list-style: none; }
 }
 
 .hero__eyebrow::before {
+  display: none;
+}
+
+.hero__eyebrow::after {
   content: '';
   width: 28px;
   height: 1px;
   background: var(--accent);
+}
+
+.hero__content {
+  text-align: right;
 }
 
 .hero__title {
@@ -245,7 +254,6 @@ ul { list-style: none; }
   font-weight: 800;
   line-height: 1.0;
   letter-spacing: -0.03em;
-  max-width: 780px;
   margin-bottom: 32px;
 }
 
@@ -258,8 +266,8 @@ ul { list-style: none; }
   font-size: 16px;
   color: var(--gray);
   line-height: 1.75;
-  max-width: 500px;
   margin-bottom: 48px;
+  margin-left: auto;
 }
 
 .hero__actions {
@@ -267,6 +275,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .btn-primary {
