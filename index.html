@@ -1,9 +1,9 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="uk">
   <head>
     <base href="/" />
     <meta charset="UTF-8" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FunnelGrid — SEO, контент-маркетинг, просування сайтів</title>
     <meta
@@ -25,7 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-  </head>
+    <link rel="stylesheet" href="/reframe.css">
+</head>
   <body>
     <!-- TOP STRIP -->
     <div class="top-strip">
@@ -69,38 +70,6 @@
       <!-- HERO -->
       <section style="border-bottom: 1px solid var(--border)">
         <div class="hero">
-          <div class="hero__panel anim-fade anim-d2">
-            <img
-              class="hero__panel-img"
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&q=85&fit=crop"
-              alt="Зростання трафіку та позицій сайту"
-            />
-            <div class="hero__panel-body">
-              <div class="hero__panel-title">Середні результати клієнтів</div>
-              <div class="hero__metrics">
-                <div class="hero__metric">
-                  <div class="hero__metric-val">+<span>340</span>%</div>
-                  <div class="hero__metric-label">
-                    Органічний трафік за 6 міс
-                  </div>
-                </div>
-                <div class="hero__metric">
-                  <div class="hero__metric-val">Топ<span>10</span></div>
-                  <div class="hero__metric-label">
-                    Позиції Google за ключами
-                  </div>
-                </div>
-                <div class="hero__metric">
-                  <div class="hero__metric-val"><span>2.4</span>x</div>
-                  <div class="hero__metric-label">Зростання конверсій</div>
-                </div>
-                <div class="hero__metric">
-                  <div class="hero__metric-val"><span>94</span>%</div>
-                  <div class="hero__metric-label">Клієнтів продовжують</div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="hero__content">
             <div class="hero__eyebrow anim-up">Агентство просування сайтів</div>
             <h1 class="hero__title anim-up anim-d1">
@@ -267,162 +236,137 @@
         </div>
       </section>
 
-      <!-- PROCESS -->
-      <div class="process-strip">
-        <div class="process-inner">
-          <div class="section-eyebrow">Як ми працюємо</div>
-          <h2 class="section__title" style="max-width: 560px; margin-top: 16px">
-            П'ять кроків до зростання вашого сайту
-          </h2>
-          <div class="process-steps">
-            <div class="process-step anim-up">
-              <div class="process-step__dot">1</div>
-              <div class="process-step__title">Аудит</div>
-              <div class="process-step__desc">
-                Технічний та SEO аналіз поточного стану сайту
-              </div>
-            </div>
-            <div class="process-step anim-up anim-d1">
-              <div class="process-step__dot">2</div>
-              <div class="process-step__title">Стратегія</div>
-              <div class="process-step__desc">
-                Формуємо дорожню карту просування на 3–6 місяців
-              </div>
-            </div>
-            <div class="process-step anim-up anim-d2">
-              <div class="process-step__dot">3</div>
-              <div class="process-step__title">Запуск</div>
-              <div class="process-step__desc">
-                Впроваджуємо зміни та запускаємо рекламні кампанії
-              </div>
-            </div>
-            <div class="process-step anim-up anim-d3">
-              <div class="process-step__dot">4</div>
-              <div class="process-step__title">Оптимізація</div>
-              <div class="process-step__desc">
-                Постійний моніторинг і покращення показників
-              </div>
-            </div>
-            <div class="process-step anim-up anim-d4">
-              <div class="process-step__dot">5</div>
-              <div class="process-step__title">Звітність</div>
-              <div class="process-step__desc">
-                Прозорі звіти щомісяця з чіткими метриками
-              </div>
-            </div>
-          </div>
+      <!-- FUNNEL SIGNAL LAB -->
+      <section class="signal-lab" aria-labelledby="signalLabTitle">
+        <div class="signal-lab__intro">
+          <div class="section-eyebrow">Funnel Signal Lab</div>
+          <h2 id="signalLabTitle">Знаходимо не слабке місце. Знаходимо втрачений попит.</h2>
+          <p>
+            Бізнес рідко потребує «ще більше реклами». Спочатку варто зрозуміти,
+            на якому сигналі система перестає перетворювати увагу на продажі.
+          </p>
+          <a href="/contacts/">Отримати карту сигналів →</a>
         </div>
-      </div>
 
-      <!-- STATS BAND -->
-      <div class="stats-band">
-        <div class="stats-band__inner">
-          <div class="stat-block anim-up">
-            <div class="stat-block__num">3<sup>+</sup></div>
-            <div class="stat-block__label">
-              Років на ринку digital-маркетингу
-            </div>
+        <div class="signal-lab__console">
+          <div class="signal-lab__status">
+            <span><i></i> Діагностика активна</span>
+            <small>Оберіть зону</small>
           </div>
-          <div class="stat-block anim-up anim-d1">
-            <div class="stat-block__num">120<sup>+</sup></div>
-            <div class="stat-block__label">Успішних проектів з просування</div>
+          <div class="signal-lab__tabs" role="tablist" aria-label="Зони маркетингової системи">
+            <button class="is-active" type="button" role="tab" aria-selected="true" aria-controls="signal-demand" data-signal-tab="demand"><b>1</b> Попит</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="signal-trust" data-signal-tab="trust"><b>2</b> Довіра</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="signal-return" data-signal-tab="return"><b>3</b> Повернення</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="signal-data" data-signal-tab="data"><b>4</b> Дані</button>
           </div>
-          <div class="stat-block anim-up anim-d2">
-            <div class="stat-block__num">340<sup>%</sup></div>
-            <div class="stat-block__label">
-              Середнє зростання трафіку клієнтів
-            </div>
-          </div>
-          <div class="stat-block anim-up anim-d3">
-            <div class="stat-block__num">94<sup>%</sup></div>
-            <div class="stat-block__label">Клієнтів продовжують співпрацю</div>
-          </div>
-        </div>
-      </div>
 
-      <!-- CASES -->
-      <section class="section section-border">
-        <div class="section__head">
-          <div class="section__head-left">
-            <div class="section-eyebrow">Результати клієнтів</div>
-            <h2 class="section__title">
-              Кейси та реальні<br />показники зростання
-            </h2>
+          <div class="signal-lab__panels">
+            <article id="signal-demand" class="signal-panel is-active" role="tabpanel" data-signal-panel="demand">
+              <div class="signal-panel__code">SEARCH / DISCOVERY</div>
+              <h3>Клієнти вже шукають, але не бачать вас</h3>
+              <p>Перевіряємо частку видимості, пошуковий попит, конкурентів та рекламне покриття.</p>
+              <div class="signal-panel__route"><span>SEO</span><span>Google Ads</span><span>Контент</span></div>
+              <div class="signal-panel__pulse"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </article>
+            <article id="signal-trust" class="signal-panel" role="tabpanel" data-signal-panel="trust" hidden>
+              <div class="signal-panel__code">MESSAGE / PROOF</div>
+              <h3>Трафік є, але аргументів для рішення замало</h3>
+              <p>Аналізуємо пропозицію, контент, кейси та точки, де людина втрачає довіру до бренду.</p>
+              <div class="signal-panel__route"><span>Креативи</span><span>Кейси</span><span>UX-контент</span></div>
+              <div class="signal-panel__pulse"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </article>
+            <article id="signal-return" class="signal-panel" role="tabpanel" data-signal-panel="return" hidden>
+              <div class="signal-panel__code">RETENTION / REPEAT</div>
+              <h3>Тепла аудиторія зникає після першого контакту</h3>
+              <p>Будуємо сценарії повернення через ремаркетинг, email-комунікацію та корисний контент.</p>
+              <div class="signal-panel__route"><span>Email</span><span>Ремаркетинг</span><span>SMM</span></div>
+              <div class="signal-panel__pulse"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </article>
+            <article id="signal-data" class="signal-panel" role="tabpanel" data-signal-panel="data" hidden>
+              <div class="signal-panel__code">MEASURE / DECIDE</div>
+              <h3>Рішення приймаються за кліками, а не за прибутком</h3>
+              <p>Зв’язуємо канали, заявки й продажі в одну систему вимірювання без сліпих зон.</p>
+              <div class="signal-panel__route"><span>GA4</span><span>GTM</span><span>CRM-аналітика</span></div>
+              <div class="signal-panel__pulse"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </article>
           </div>
-          <a href="/cases/" class="link-all">Всі кейси →</a>
         </div>
-        <div class="cases-grid">
-          <div class="case-card anim-up">
-            <img
-              class="case-card__img"
-              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=700&q=85&fit=crop"
-              alt="Інтернет-магазин електроніки — кейс SEO"
-            />
-            <div class="case-card__body">
-              <div class="case-card__tags">
-                <span class="tag tag--accent">SEO</span>
-                <span class="tag">Контент</span>
-                <span class="tag">Інтернет-магазин</span>
-              </div>
-              <h3 class="case-card__title">
-                Магазин електроніки — +410% трафіку
-              </h3>
-              <p class="case-card__desc">
-                Вивели 380 ключових слів у топ-10 Google за 4 місяці
-                SEO-просування та контент-стратегії.
-              </p>
-              <div class="case-card__result">
-                <strong>+410%</strong> органічний трафік за 4 місяці
-              </div>
-            </div>
+
+        <div class="signal-lab__legend" aria-label="Принцип діагностики">
+          <span>Виявляємо сигнал</span><i>→</i><span>Знаходимо втрату</span><i>→</i><span>Підбираємо канал</span><i>→</i><span>Вимірюємо продаж</span>
+        </div>
+      </section>
+
+      <!-- CAMPAIGN DECISION ENGINE -->
+      <section class="decision-engine" aria-labelledby="decisionTitle">
+        <div class="decision-engine__head">
+          <div>
+            <div class="section-eyebrow">Campaign Decision Engine</div>
+            <h2 id="decisionTitle">Не набір каналів.<br />Сценарій під вашу ціль.</h2>
           </div>
-          <div class="case-card anim-up anim-d1">
-            <img
-              class="case-card__img"
-              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=85&fit=crop"
-              alt="Освітня платформа — контент-маркетинг кейс"
-            />
-            <div class="case-card__body">
-              <div class="case-card__tags">
-                <span class="tag tag--accent">Контент</span>
-                <span class="tag">Email</span>
-                <span class="tag">Освіта</span>
-              </div>
-              <h3 class="case-card__title">
-                EdTech платформа — x3.2 реєстрацій
-              </h3>
-              <p class="case-card__desc">
-                Контент-стратегія та email-автоматизація збільшили конверсії в
-                реєстрацію в 3.2 рази за 5 місяців.
-              </p>
-              <div class="case-card__result">
-                <strong>x3.2</strong> реєстрацій через органічний канал
-              </div>
-            </div>
+          <div class="decision-engine__summary">
+            <p>Оберіть бізнес-завдання — система покаже, як змінюються фокус, маршрут клієнта та контрольна метрика кампанії.</p>
+            <a href="/cases/">Подивитися реалізовані кейси →</a>
           </div>
-          <div class="case-card anim-up anim-d2">
-            <img
-              class="case-card__img"
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=85&fit=crop"
-              alt="Фітнес-клуб — SMM та таргет кейс"
-            />
-            <div class="case-card__body">
-              <div class="case-card__tags">
-                <span class="tag tag--accent">SMM</span>
-                <span class="tag">Таргет</span>
-                <span class="tag">Фітнес</span>
-              </div>
-              <h3 class="case-card__title">
-                Мережа фітнес-клубів — 2200 лідів
-              </h3>
-              <p class="case-card__desc">
-                Таргетована реклама в Instagram та Facebook дала 2200 якісних
-                лідів за перший місяць кампанії.
-              </p>
-              <div class="case-card__result">
-                <strong>2200</strong> лідів за місяць, CPA знижено на 62%
-              </div>
+        </div>
+
+        <div class="decision-engine__body">
+          <div class="decision-engine__nav" role="tablist" aria-label="Цілі кампанії">
+            <button class="is-active" type="button" role="tab" aria-selected="true" data-decision-tab="capture">
+              <span>1</span><strong>Забрати готовий попит</strong><small>Клієнт уже шукає рішення</small>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-decision-tab="create">
+              <span>2</span><strong>Створити новий попит</strong><small>Ринок ще не знає пропозицію</small>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-decision-tab="return">
+              <span>3</span><strong>Повернути аудиторію</strong><small>Контакт був, рішення відклали</small>
+            </button>
+          </div>
+
+          <div class="decision-engine__screen">
+            <div class="decision-engine__topline">
+              <span><i></i> Сценарій зібрано</span><small>FG / live model</small>
             </div>
+            <article class="decision-scene is-active" data-decision-panel="capture">
+              <div class="decision-scene__copy">
+                <div class="decision-scene__code">INTENT / CAPTURE</div>
+                <h3>Перехоплюємо момент, коли намір уже сформований</h3>
+                <p>Пошукова реклама закриває швидкий попит, SEO створює системну видимість, а посадкова сторінка прибирає зайві кроки до звернення.</p>
+              </div>
+              <div class="decision-scene__route" aria-label="Маршрут кампанії">
+                <span>Запит</span><i></i><span>Google Ads</span><i></i><span>Landing</span><i></i><span>Заявка</span>
+              </div>
+              <div class="decision-scene__metrics">
+                <span><small>Фокус</small>частка видимості</span><span><small>Контроль</small>вартість ліда</span><span><small>Ритм</small>щотижнева оптимізація</span>
+              </div>
+            </article>
+            <article class="decision-scene" data-decision-panel="create" hidden>
+              <div class="decision-scene__copy">
+                <div class="decision-scene__code">DISCOVERY / CREATE</div>
+                <h3>Показуємо цінність раніше, ніж людина почне шукати</h3>
+                <p>Креативи формують перший інтерес, контент пояснює продукт, а ремаркетинг переводить увагу з перегляду в предметний діалог.</p>
+              </div>
+              <div class="decision-scene__route" aria-label="Маршрут кампанії">
+                <span>Креатив</span><i></i><span>Meta Ads</span><i></i><span>Контент</span><i></i><span>Діалог</span>
+              </div>
+              <div class="decision-scene__metrics">
+                <span><small>Фокус</small>якість уваги</span><span><small>Контроль</small>ціна контакту</span><span><small>Ритм</small>цикли тестів 7–10 днів</span>
+              </div>
+            </article>
+            <article class="decision-scene" data-decision-panel="return" hidden>
+              <div class="decision-scene__copy">
+                <div class="decision-scene__code">RETENTION / RETURN</div>
+                <h3>Продовжуємо розмову, не повторюючи одну й ту саму рекламу</h3>
+                <p>Сегментуємо аудиторію за діями, створюємо корисні приводи повернутися й автоматизуємо персональні сценарії повторного контакту.</p>
+              </div>
+              <div class="decision-scene__route" aria-label="Маршрут кампанії">
+                <span>Сегмент</span><i></i><span>Email</span><i></i><span>Ремаркетинг</span><i></i><span>Повторна дія</span>
+              </div>
+              <div class="decision-scene__metrics">
+                <span><small>Фокус</small>повторні дії</span><span><small>Контроль</small>дохід із бази</span><span><small>Ритм</small>тригерні сценарії</span>
+              </div>
+            </article>
+            <div class="decision-engine__signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           </div>
         </div>
       </section>
@@ -751,5 +695,6 @@
         banner.classList.remove("visible");
       };
     </script>
-  </body>
+    <script src="/site.js"></script>
+</body>
 </html>

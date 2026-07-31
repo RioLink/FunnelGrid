@@ -3,7 +3,7 @@
 <head>
   <base href="/">
   <meta charset="UTF-8">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакти — FunnelGrid</title>
   <meta name="description" content="Зв'яжіться з FunnelGrid для безкоштовного аудиту сайту та консультації щодо SEO і digital-маркетингу.">
@@ -40,6 +40,7 @@
     @media(max-width:1100px){.contacts-split{padding:0 24px;gap:40px}}
     @media(max-width:900px){.contacts-split{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
   </style>
+  <link rel="stylesheet" href="/reframe.css">
 </head>
 <body>
 
@@ -117,7 +118,7 @@
       <div class="contact-strip">
         <div class="contact-strip__item">
           <div class="contact-strip__icon">✉</div>
-          <div><div class="contact-strip__label">Email</div><div class="contact-strip__val"><a href="mailto:hello@funnelgrid.ua">hello@funnelgrid.ua</a></div></div>
+          <div><div class="contact-strip__label">Email</div><div class="contact-strip__val"><a href="mailto:support@funnel-grid.org">support@funnel-grid.org</a></div></div>
         </div>
         <div class="contact-strip__item">
           <div class="contact-strip__icon">☎</div>
@@ -155,5 +156,6 @@
   document.getElementById('burger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.toggle('open'));
   document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
 </script>
+  <script src="/site.js"></script>
 </body>
 </html>
